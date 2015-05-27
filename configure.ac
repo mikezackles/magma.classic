@@ -4,6 +4,9 @@ AC_INIT([magma], [0.1])
 # versions.  TODO - determine the minimum autoconf version we will support
 AC_PREREQ([2.68])
 
+# Look for macros in the m4 directory
+AC_CONFIG_MACRO_DIR([m4])
+
 # Sanity check to make sure the specified srcdir contains magma.h
 AC_CONFIG_SRCDIR([src/magma.h])
 
