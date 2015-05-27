@@ -14,3 +14,9 @@ res/virus/bytecode.cld
 res/virus/mirrors.dat
 res/virus/safebrowsing.cvd
 tools/pwtool/pwtool
+
+Makefile.in
+aclocal.m4
+autom4te.cache
+build-aux
+configure
