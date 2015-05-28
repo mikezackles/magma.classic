@@ -24,4 +24,7 @@ libmagmacore_a_SOURCES = \
         src/core/host/host.c \
         src/core/host/mappings.c \
         src/core/host/process.c \
-        src/core/host/spool.c
+        src/core/host/spool.c \
+        src/core/buckets/arrays.c \
+        src/core/buckets/pool.c \
+        src/core/buckets/stacked.c
