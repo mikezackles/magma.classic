@@ -301,8 +301,11 @@ inx_t * inx_alloc(uint64_t options, void *data_free) {
 
 	switch (options & MAGMA_INDEX_TYPE) {
 	case M_INX_TREE:
-		inx = tree_alloc(options, data_free);
-		break;
+		// Fall through if there is no external tree_alloc function provided
+		if (core_config.trees.tree_alloc != NULL) {
+			inx = core_config.trees.tree_alloc(options, data_free);
+			break;
+		}
 	case M_INX_LINKED:
 		inx = linked_alloc(options, data_free);
 		break;
