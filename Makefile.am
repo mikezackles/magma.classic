@@ -7,5 +7,5 @@ noinst_LIBRARIES = libmagmacore.a
 libmagmacore_a_SOURCES = \
 		src/core/memory/align.c \
 		src/core/memory/bits.c \
-		src/core/memory/secure.c \
 		src/core/memory/memory.c
+# src/core/memory/secure.c
