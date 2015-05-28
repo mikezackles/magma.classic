@@ -27,8 +27,8 @@ AM_INIT_AUTOMAKE([foreign subdir-objects nostdinc])
 # Instruct configure to create Makefile using Makefile.am
 AC_CONFIG_FILES([Makefile])
 
-# Find and probe C compiler
-AC_PROG_CC
+# Find and probe C compiler (use "current" standard)
+AC_PROG_CC_STDC
 
 # Find ranlib
 AC_PROG_RANLIB
