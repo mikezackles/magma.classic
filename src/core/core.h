@@ -21,7 +21,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
-//#include <unistd.h>
+#include <unistd.h>
 //#include <stddef.h>
 //#include <limits.h>
 //#include <signal.h>
@@ -35,10 +35,10 @@
 #include <pthread.h>
 #include <stdarg.h>
 //#include <dlfcn.h>
-//#include <execinfo.h>
+#include <execinfo.h>
 #include <stdbool.h>
 //#include <sys/types.h>
-//#include <sys/stat.h>
+#include <sys/stat.h>
 //#include <sys/resource.h>
 //#include <sys/time.h>
 //#include <sys/socket.h>
@@ -100,17 +100,17 @@ char * type(M_TYPE type);
 /************ TYPE ************/
 
 #include "memory/memory.h"
-//#include "strings/strings.h"
+#include "strings/strings.h"
 //#include "classify/classify.h"
 //#include "encodings/encodings.h"
 #include "log/log.h"
-//#include "indexes/indexes.h"
+#include "indexes/indexes.h"
 //#include "compare/compare.h"
 #include "thread/thread.h"
 //#include "buckets/buckets.h"
-//#include "parsers/parsers.h"
+#include "parsers/parsers.h"
 //#include "hash/hash.h"
-//#include "host/host.h"
+#include "host/host.h"
 #include "config/core_config.h"
 
 extern core_config_t core_config;
