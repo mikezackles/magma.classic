@@ -20,7 +20,7 @@
 
 #include <stdint.h>
 #include <stdlib.h>
-//#include <stdio.h>
+#include <stdio.h>
 //#include <unistd.h>
 //#include <stddef.h>
 //#include <limits.h>
