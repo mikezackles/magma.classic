@@ -17,4 +17,5 @@ libmagmacore_a_SOURCES = \
 		src/core/hash/adler.c \
 		src/core/hash/crc.c \
 		src/core/hash/fletcher.c \
-		src/core/hash/murmur.c
+		src/core/hash/murmur.c \
+		src/core/classify/classify.c
