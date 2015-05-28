@@ -37,4 +37,10 @@ libmagmacore_a_SOURCES = \
 		src/core/strings/info.c \
 		src/core/strings/length.c \
 		src/core/strings/multi.c \
+		src/core/strings/nuller.c \
+		src/core/strings/opts.c \
+		src/core/strings/print.c \
+		src/core/strings/replace.c \
+		src/core/strings/shortcuts.c \
+		src/core/strings/validate.c \
 		src/core/limits/system_limits.c
