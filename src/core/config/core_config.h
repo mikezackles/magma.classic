@@ -63,23 +63,22 @@ typedef struct {
 		//stringer_t *sessions; /* The string used to encrypt session tokens. */
 	} secure;
 
-	//struct {
-	//	bool_t file; /* Send log messages to a file. */
-	//	chr_t *path; /* If log files are enabled, this will control whether the logs are stored. */
-	//} output;
+	struct {
+		bool_t file; /* Send log messages to a file. */
+		chr_t *path; /* If log files are enabled, this will control whether the logs are stored. */
+	} output;
 
-	//struct {
+	struct {
+		//bool_t imap; /* Output IMAP request details. */
+		//bool_t http; /* Output HTTP request details. */
+		//bool_t content; /* Output the web resource files loaded. */
 
-	//	bool_t imap; /* Output IMAP request details. */
-	//	bool_t http; /* Output HTTP request details. */
-	//	bool_t content; /* Output the web resource files loaded. */
-
-	//	bool_t file; /* Output the source file that recorded the log entry. */
-	//	bool_t line; /* Output the source line that recorded the log entry. */
-	//	bool_t time; /* Output time that the log entry was recorded. */
-	//	bool_t stack; /* Output the stack that triggered the log entry. */
-	//	bool_t function; /* Output the function that made the log entry. */
-	//} log;
+		bool_t file; /* Output the source file that recorded the log entry. */
+		bool_t line; /* Output the source line that recorded the log entry. */
+		bool_t time; /* Output time that the log entry was recorded. */
+		bool_t stack; /* Output the stack that triggered the log entry. */
+		bool_t function; /* Output the function that made the log entry. */
+	} log;
 
 	//struct {
 	//	chr_t *tank; /* The path of the storage tank. */
