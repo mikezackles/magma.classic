@@ -43,4 +43,8 @@ libmagmacore_a_SOURCES = \
 		src/core/strings/replace.c \
 		src/core/strings/shortcuts.c \
 		src/core/strings/validate.c \
+		src/core/compare/ends.c \
+		src/core/compare/equal.c \
+		src/core/compare/search.c \
+		src/core/compare/starts.c \
 		src/core/limits/system_limits.c

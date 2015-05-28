@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "core.h"
 
 /**
  * @brief	Search one managed string for an occurrence of another in a case-sensitive manner, and save its location.
