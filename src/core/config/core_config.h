@@ -191,8 +191,12 @@ typedef struct {
 
 	//} iface;
 
-	//// Global config section
-	//chr_t * spool; /* The spool directory. */
+	struct {
+		uint64_t (*rand_get_uint64)(void); // Pointer to a function that returns a random 64-bit integer
+	} random;
+
+	// Global config section
+	chr_t * spool; /* The spool directory. */
 	int_t page_length; /* The memory page size. This value is used to align memory mapped files to page boundaries. */
 
 	//// Global variables section

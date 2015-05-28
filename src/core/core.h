@@ -13,6 +13,8 @@
 #ifndef MAGMA_CORE_H
 #define MAGMA_CORE_H
 
+#define MAGMA_CORE_FILEPATH_MAX PATH_MAX
+
 /**
  * Mostly copied from magma.h
  * TODO - Prune anything not necessary for libcore
@@ -26,11 +28,11 @@
 //#include <limits.h>
 #include <signal.h>
 #include <string.h>
-//#include <dirent.h>
+#include <dirent.h>
 //#include <time.h>
 //#include <pwd.h>
-//#include <errno.h>
-//#include <fcntl.h>
+#include <errno.h>
+#include <fcntl.h>
 //#include <inttypes.h>
 #include <pthread.h>
 #include <stdarg.h>
@@ -42,7 +44,7 @@
 //#include <sys/resource.h>
 //#include <sys/time.h>
 //#include <sys/socket.h>
-//#include <sys/utsname.h>
+#include <sys/utsname.h>
 //#include <sys/epoll.h>
 //#include <netinet/in.h>
 //#include <arpa/inet.h>
@@ -50,7 +52,7 @@
 //#include <netdb.h>
 //#include <resolv.h>
 //#include <regex.h>
-//#include <ftw.h>
+#include <ftw.h>
 //#include <search.h>
 #include <semaphore.h>
 #include <sys/mman.h>
@@ -105,7 +107,7 @@ char * type(M_TYPE type);
 //#include "encodings/encodings.h"
 #include "log/log.h"
 #include "indexes/indexes.h"
-//#include "compare/compare.h"
+#include "compare/compare.h"
 #include "thread/thread.h"
 //#include "buckets/buckets.h"
 #include "parsers/parsers.h"
@@ -115,5 +117,8 @@ char * type(M_TYPE type);
 
 extern core_config_t core_config;
 
-#endif
+extern __thread char coreThreadBuffer[1024];
+#define corebufptr (char *)&(coreThreadBuffer)
+#define corebuflen sizeof(coreThreadBuffer)
 
+#endif

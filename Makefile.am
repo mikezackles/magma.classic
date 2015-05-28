@@ -18,4 +18,10 @@ libmagmacore_a_SOURCES = \
 		src/core/hash/crc.c \
 		src/core/hash/fletcher.c \
 		src/core/hash/murmur.c \
-		src/core/classify/classify.c
+		src/core/classify/ascii.c \
+        src/core/host/files.c \
+        src/core/host/folder.c \
+        src/core/host/host.c \
+        src/core/host/mappings.c \
+        src/core/host/process.c \
+        src/core/host/spool.c
