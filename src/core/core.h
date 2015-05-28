@@ -18,41 +18,40 @@
  * TODO - Prune anything not necessary for libcore
  */
 
-#define __USE_GNU
-
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stddef.h>
-#include <limits.h>
-#include <signal.h>
-#include <string.h>
-#include <dirent.h>
-#include <time.h>
-#include <pwd.h>
-#include <errno.h>
-#include <fcntl.h>
-#include <inttypes.h>
+#include <stdint.h>
+//#include <stdlib.h>
+//#include <stdio.h>
+//#include <unistd.h>
+//#include <stddef.h>
+//#include <limits.h>
+//#include <signal.h>
+//#include <string.h>
+//#include <dirent.h>
+//#include <time.h>
+//#include <pwd.h>
+//#include <errno.h>
+//#include <fcntl.h>
+//#include <inttypes.h>
 #include <pthread.h>
 #include <stdarg.h>
-#include <dlfcn.h>
-#include <execinfo.h>
+//#include <dlfcn.h>
+//#include <execinfo.h>
 #include <stdbool.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <sys/resource.h>
-#include <sys/time.h>
-#include <sys/socket.h>
-#include <sys/utsname.h>
-#include <sys/epoll.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <arpa/nameser.h>
-#include <netdb.h>
-#include <resolv.h>
-#include <regex.h>
-#include <ftw.h>
-#include <search.h>
+//#include <sys/types.h>
+//#include <sys/stat.h>
+//#include <sys/resource.h>
+//#include <sys/time.h>
+//#include <sys/socket.h>
+//#include <sys/utsname.h>
+//#include <sys/epoll.h>
+//#include <netinet/in.h>
+//#include <arpa/inet.h>
+//#include <arpa/nameser.h>
+//#include <netdb.h>
+//#include <resolv.h>
+//#include <regex.h>
+//#include <ftw.h>
+//#include <search.h>
 #include <semaphore.h>
 #include <sys/mman.h>
 #include <float.h>
@@ -101,17 +100,20 @@ char * type(M_TYPE type);
 /************ TYPE ************/
 
 #include "memory/memory.h"
-#include "strings/strings.h"
-#include "classify/classify.h"
-#include "encodings/encodings.h"
-#include "log/log.h"
-#include "indexes/indexes.h"
-#include "compare/compare.h"
+//#include "strings/strings.h"
+//#include "classify/classify.h"
+//#include "encodings/encodings.h"
+//#include "log/log.h"
+//#include "indexes/indexes.h"
+//#include "compare/compare.h"
 #include "thread/thread.h"
-#include "buckets/buckets.h"
-#include "parsers/parsers.h"
-#include "hash/hash.h"
-#include "host/host.h"
+//#include "buckets/buckets.h"
+//#include "parsers/parsers.h"
+//#include "hash/hash.h"
+//#include "host/host.h"
+#include "config/core_config.h"
+
+extern core_config_t core_config;
 
 #endif
 
