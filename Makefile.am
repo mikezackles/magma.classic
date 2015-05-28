@@ -23,14 +23,14 @@ libmagmacore_a_SOURCES = \
 		src/core/hash/fletcher.c \
 		src/core/hash/murmur.c \
 		src/core/classify/ascii.c \
-        src/core/host/files.c \
-        src/core/host/folder.c \
-        src/core/host/host.c \
-        src/core/host/mappings.c \
-        src/core/host/process.c \
-        src/core/host/spool.c \
-        src/core/buckets/arrays.c \
-        src/core/buckets/pool.c \
-        src/core/buckets/stacked.c \
+		src/core/host/files.c \
+		src/core/host/folder.c \
+		src/core/host/host.c \
+		src/core/host/mappings.c \
+		src/core/host/process.c \
+		src/core/host/spool.c \
+		src/core/buckets/arrays.c \
+		src/core/buckets/pool.c \
+		src/core/buckets/stacked.c \
 		src/core/strings/allocation.c \
 		src/core/limits/system_limits.c
