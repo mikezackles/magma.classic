@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "core.h"
 
 chr_t *st_option_flags[] = {
 	"FOREIGNDATA"
