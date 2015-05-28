@@ -19,13 +19,13 @@
  */
 
 #include <stdint.h>
-//#include <stdlib.h>
+#include <stdlib.h>
 //#include <stdio.h>
 //#include <unistd.h>
 //#include <stddef.h>
 //#include <limits.h>
 //#include <signal.h>
-//#include <string.h>
+#include <string.h>
 //#include <dirent.h>
 //#include <time.h>
 //#include <pwd.h>
@@ -103,7 +103,7 @@ char * type(M_TYPE type);
 //#include "strings/strings.h"
 //#include "classify/classify.h"
 //#include "encodings/encodings.h"
-//#include "log/log.h"
+#include "log/log.h"
 //#include "indexes/indexes.h"
 //#include "compare/compare.h"
 #include "thread/thread.h"
