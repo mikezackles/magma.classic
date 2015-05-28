@@ -13,4 +13,8 @@ libmagmacore_a_SOURCES = \
 		src/core/thread/keys.c \
 		src/core/thread/mutex.c \
 		src/core/thread/rwlock.c \
-		src/core/thread/thread.c
+		src/core/thread/thread.c \
+		src/core/hash/adler.c \
+		src/core/hash/crc.c \
+		src/core/hash/fletcher.c \
+		src/core/hash/murmur.c

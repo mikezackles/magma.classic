@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "core.h"
 
 #define A1 A
 #define A(x) ((x) & 0xFF)

@@ -109,7 +109,7 @@ char * type(M_TYPE type);
 #include "thread/thread.h"
 //#include "buckets/buckets.h"
 #include "parsers/parsers.h"
-//#include "hash/hash.h"
+#include "hash/hash.h"
 #include "host/host.h"
 #include "config/core_config.h"
 
