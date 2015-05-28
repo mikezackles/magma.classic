@@ -47,4 +47,10 @@ libmagmacore_a_SOURCES = \
 		src/core/compare/equal.c \
 		src/core/compare/search.c \
 		src/core/compare/starts.c \
+		src/core/encodings/base64.c \
+		src/core/encodings/hex.c \
+		src/core/encodings/mappings.c \
+		src/core/encodings/qp.c \
+		src/core/encodings/url.c \
+		src/core/encodings/zbase32.c \
 		src/core/limits/system_limits.c

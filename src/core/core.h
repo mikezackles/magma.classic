@@ -104,7 +104,7 @@ char * type(M_TYPE type);
 #include "memory/memory.h"
 #include "strings/strings.h"
 #include "classify/classify.h"
-//#include "encodings/encodings.h"
+#include "encodings/encodings.h"
 #include "log/log.h"
 #include "indexes/indexes.h"
 #include "compare/compare.h"
