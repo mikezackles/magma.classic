@@ -5,6 +5,10 @@ EXTRA_DIST = m4/NOTES
 AM_CPPFLAGS = -I$(top_srcdir)/src/core
 noinst_LIBRARIES = libmagmacore.a
 libmagmacore_a_SOURCES = \
+		src/core/indexes/cursors.c \
+		src/core/indexes/hashed.c \
+		src/core/indexes/inx.c \
+		src/core/indexes/linked.c \
 		src/core/memory/align.c \
 		src/core/memory/bits.c \
 		src/core/memory/memory.c \
