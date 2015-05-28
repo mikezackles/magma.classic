@@ -9,4 +9,8 @@ libmagmacore_a_SOURCES = \
 		src/core/memory/bits.c \
 		src/core/memory/memory.c \
 		src/core/memory/secure.c \
-		src/core/log/log.c
+		src/core/log/log.c \
+		src/core/thread/keys.c \
+		src/core/thread/mutex.c \
+		src/core/thread/rwlock.c \
+		src/core/thread/thread.c

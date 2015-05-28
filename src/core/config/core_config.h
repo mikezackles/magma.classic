@@ -37,20 +37,20 @@ typedef struct {
 	//	bool_t unload; /* Unload the magma.open.so symbols at exit. */
 	//} library;
 
-	//struct {
-	//	bool_t daemonize; /* Spawn a daemon process and release the console session. */
-	//	char * root_directory; /* Change the root path to the provided value. */
-	//	char * impersonate_user; /* Change the effective user account of the process to the user provided. */
-	//	bool_t increase_resource_limits; /* Attempt to increase system limits. */
-	//	uint32_t thread_stack_size; /* How much memory should be allocated for thread stacks? */
-	//	uint32_t worker_threads; /* How many worker threads should we spawn? */
-	//	uint32_t network_buffer; /* The size of the network buffer? */
+	struct {
+		//bool_t daemonize; /* Spawn a daemon process and release the console session. */
+		//char * root_directory; /* Change the root path to the provided value. */
+		//char * impersonate_user; /* Change the effective user account of the process to the user provided. */
+		//bool_t increase_resource_limits; /* Attempt to increase system limits. */
+		uint32_t thread_stack_size; /* How much memory should be allocated for thread stacks? */
+		//uint32_t worker_threads; /* How many worker threads should we spawn? */
+		//uint32_t network_buffer; /* The size of the network buffer? */
 
-	//	bool_t enable_core_dumps; /* Should fatal errors leave behind a core dump. */
-	//	uint64_t core_dump_size_limit; /* If core dumps are enabled, what size should they be limited too. */
+		//bool_t enable_core_dumps; /* Should fatal errors leave behind a core dump. */
+		//uint64_t core_dump_size_limit; /* If core dumps are enabled, what size should they be limited too. */
 
-	//	stringer_t *domain; /* The default domain name used in new user email addresses and for unqualified login names. */
-	//} system;
+		//stringer_t *domain; /* The default domain name used in new user email addresses and for unqualified login names. */
+	} system;
 
 	struct {
 		struct {
