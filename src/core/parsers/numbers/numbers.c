@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "core.h"
 
 /**
  * @brief	Convert a managed string to a float.

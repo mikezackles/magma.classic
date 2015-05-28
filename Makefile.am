@@ -53,4 +53,13 @@ libmagmacore_a_SOURCES = \
 		src/core/encodings/qp.c \
 		src/core/encodings/url.c \
 		src/core/encodings/zbase32.c \
+		src/core/parsers/formats/nvp.c \
+		src/core/parsers/numbers/digits.c \
+		src/core/parsers/numbers/numbers.c \
+		src/core/parsers/special/bracket.c \
+		src/core/parsers/case.c \
+		src/core/parsers/line.c \
+		src/core/parsers/time.c \
+		src/core/parsers/token.c \
+		src/core/parsers/trim.c \
 		src/core/limits/system_limits.c

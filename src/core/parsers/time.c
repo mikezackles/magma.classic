@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "core.h"
 
 /**
  * @brief	Get the number of seconds until midnight.

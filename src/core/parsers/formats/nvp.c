@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "core.h"
 
 /**
  * on success the number of valid pairs is returned

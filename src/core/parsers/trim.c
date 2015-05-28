@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "core.h"
 
 #define CHARS_TO_TRIM ' ', '\n', '\r', '\t', '\v'
 

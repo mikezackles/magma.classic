@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "core.h"
 
 /**
  * @brief	Return the uppercase representation of a character.
