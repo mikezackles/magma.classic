@@ -41,7 +41,7 @@
 #include <stdbool.h>
 //#include <sys/types.h>
 #include <sys/stat.h>
-//#include <sys/resource.h>
+#include <sys/resource.h>
 //#include <sys/time.h>
 //#include <sys/socket.h>
 #include <sys/utsname.h>
@@ -114,6 +114,7 @@ char * type(M_TYPE type);
 #include "hash/hash.h"
 #include "host/host.h"
 #include "config/core_config.h"
+#include "limits/system_limits.h"
 
 extern core_config_t core_config;
 

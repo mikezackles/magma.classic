@@ -31,4 +31,6 @@ libmagmacore_a_SOURCES = \
         src/core/host/spool.c \
         src/core/buckets/arrays.c \
         src/core/buckets/pool.c \
-        src/core/buckets/stacked.c
+        src/core/buckets/stacked.c \
+		src/core/strings/allocation.c \
+		src/core/limits/system_limits.c
