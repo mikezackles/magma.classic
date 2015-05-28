@@ -40,8 +40,6 @@ bool_t    system_init_core_dumps(void);
 bool_t    system_init_impersonation(void);
 bool_t    system_init_resource_limits(void);
 bool_t    system_init_umask(void);
-uint64_t   system_limit_cur(int_t resource);
-uint64_t   system_limit_max(int_t resource);
 
 /// thread.c
 bool_t thread_start(void);
