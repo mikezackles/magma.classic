@@ -68,3 +68,11 @@ libmagmacore_a_SOURCES = \
 libmagmacore_check_a_CPPFLAGS = -I$(top_srcdir)/src/core -I$(top_srcdir)/check/core
 libmagmacore_check_a_SOURCES = \
 		check/core/core_check.c
+
+check_PROGRAMS = core_tests
+
+core_tests_CPPFLAGS = $(CHECK_CFLAGS)
+core_tests_LDFLAGS = $(CHECK_LIBS)
+core_tests_SOURCES = \
+		check/core/runner.c
+core_tests_LDADD = libmagmacore.a libmagmacore_check.a

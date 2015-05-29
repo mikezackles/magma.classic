@@ -7,6 +7,9 @@ AC_PREREQ([2.68])
 # Look for macros in the m4 directory
 AC_CONFIG_MACRO_DIR([m4])
 
+# Try to find libcheck using pkg-config
+PKG_CHECK_MODULES([CHECK], [check >= 0.9])
+
 # Sanity check to make sure the specified srcdir contains magma.h
 AC_CONFIG_SRCDIR([src/magma.h])
 
