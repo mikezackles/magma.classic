@@ -192,7 +192,22 @@ typedef struct {
 	//} iface;
 
 	struct {
-		uint64_t (*rand_get_uint64)(void); // Pointer to a function that returns a random 64-bit integer
+		// Pointer to a function that returns a random 8-bit integer
+		int8_t (*rand_get_int8)(void);
+		// Pointer to a function that returns a random 16-bit integer
+		int16_t (*rand_get_int16)(void);
+		// Pointer to a function that returns a random 32-bit integer
+		int32_t (*rand_get_int32)(void);
+		// Pointer to a function that returns a random 64-bit integer
+		int64_t (*rand_get_int64)(void);
+		// Pointer to a function that returns a random unsigned 8-bit integer
+		uint8_t (*rand_get_uint8)(void);
+		// Pointer to a function that returns a random unsigned 16-bit integer
+		uint16_t (*rand_get_uint16)(void);
+		// Pointer to a function that returns a random unsigned 32-bit integer
+		uint32_t (*rand_get_uint32)(void);
+		// Pointer to a function that returns a random unsigned 64-bit integer
+		uint64_t (*rand_get_uint64)(void);
 	} random;
 
 	struct {
