@@ -2,8 +2,9 @@
 ACLOCAL_AMFLAGS = -I m4 --install
 EXTRA_DIST = m4/NOTES
 
-AM_CPPFLAGS = -I$(top_srcdir)/src/core
-noinst_LIBRARIES = libmagmacore.a
+noinst_LIBRARIES = libmagmacore.a libmagmacore_check.a
+
+libmagmacore_a_CPPFLAGS = -I$(top_srcdir)/src/core
 libmagmacore_a_SOURCES = \
 		src/core/indexes/cursors.c \
 		src/core/indexes/hashed.c \
@@ -63,3 +64,7 @@ libmagmacore_a_SOURCES = \
 		src/core/parsers/token.c \
 		src/core/parsers/trim.c \
 		src/core/limits/system_limits.c
+
+libmagmacore_check_a_CPPFLAGS = -I$(top_srcdir)/src/core -I$(top_srcdir)/check/core
+libmagmacore_check_a_SOURCES = \
+		check/core/core_check.c
