@@ -75,4 +75,4 @@ core_tests_CPPFLAGS = $(CHECK_CFLAGS)
 core_tests_LDFLAGS = $(CHECK_LIBS)
 core_tests_SOURCES = \
 		check/core/runner.c
-core_tests_LDADD = libmagmacore.a libmagmacore_check.a
+core_tests_LDADD = libmagmacore_check.a libmagmacore.a
