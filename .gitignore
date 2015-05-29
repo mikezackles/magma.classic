@@ -21,3 +21,4 @@ autom4te.cache
 build-aux
 configure
 build
+m4/*.m4
