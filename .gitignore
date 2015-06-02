@@ -18,7 +18,6 @@ tools/pwtool/pwtool
 Makefile.in
 aclocal.m4
 autom4te.cache
-build-aux
 configure
-build
+build*
 m4/*.m4
