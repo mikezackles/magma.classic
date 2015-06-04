@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "network/network.h"
 
 /// LOW: Create a set of sock_addr_* functions and update the con_addr_* functions to use use them. Then add a matching set of
 /// sock_peer_* and con_peer_* functions based around the getpeername() function. Add functions for getting a socket's port number

@@ -12,6 +12,9 @@
 
 #if defined(GET_IP_T_DEFINITION) || !defined(MAGMA_NETWORK_H)
 	#ifndef GOT_IP_T_DEFINITION
+		#include <sys/socket.h>
+		#include <netinet/in.h>
+
 		typedef struct {
 			sa_family_t family;
 			union {
@@ -34,6 +37,8 @@
 #undef GET_IP_T_DEFINITION
 #elif !defined(MAGMA_NETWORK_H)
 #define MAGMA_NETWORK_H
+
+#include "magma_common.h"
 
 #include "meta.h"
 #include "sessions.h"
