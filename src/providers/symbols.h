@@ -300,25 +300,25 @@ int (*ECDH_compute_key_d)(void *out, size_t outlen, const EC_POINT *pub_key, EC_
 //! PNG
 png_uint_32 (*png_access_version_number_d)(void) __attribute__ ((common)) = NULL;
 
-//! SPF
-void (*SPF_server_free_d)(SPF_server_t *sp) __attribute__ ((common)) = NULL;
-void (*SPF_request_free_d)(SPF_request_t *sr) __attribute__ ((common)) = NULL;
-void (*SPF_response_free_d)(SPF_response_t *rp) __attribute__ ((common)) = NULL;
-const char * (*SPF_strreason_d)(SPF_reason_t reason) __attribute__ ((common)) = NULL;
-const char * (*SPF_strresult_d)(SPF_result_t result) __attribute__ ((common)) = NULL;
-const char * (*SPF_strerror_d)(SPF_errcode_t spf_err) __attribute__ ((common)) = NULL;
-SPF_reason_t (*SPF_response_reason_d)(SPF_response_t *rp) __attribute__ ((common)) = NULL;
-SPF_result_t (*SPF_response_result_d)(SPF_response_t *rp) __attribute__ ((common)) = NULL;
-SPF_request_t * (*SPF_request_new_d)(SPF_server_t * spf_server) __attribute__ ((common)) = NULL;
-void (*SPF_get_lib_version_d)(int *major, int *minor, int *patch) __attribute__ ((common)) = NULL;
-int (*SPF_request_set_env_from_d)(SPF_request_t *sr, const char *from) __attribute__ ((common)) = NULL;
-SPF_server_t * (*SPF_server_new_d)(SPF_server_dnstype_t dnstype, int debug) __attribute__ ((common)) = NULL;
-SPF_errcode_t (*SPF_request_set_helo_dom_d)(SPF_request_t *sr, const char *dom) __attribute__ ((common)) = NULL;
-SPF_errcode_t	(*SPF_request_set_ipv4_d)(SPF_request_t *sr, struct in_addr addr) __attribute__ ((common)) = NULL;
-SPF_errcode_t	(*SPF_request_set_ipv6_d)(SPF_request_t *sr, struct in6_addr addr) __attribute__ ((common)) = NULL;
-SPF_dns_server_t * (*SPF_dns_zone_new_d)(SPF_dns_server_t *layer_below, const char *name, int debug) __attribute__ ((common)) = NULL;
-SPF_errcode_t (*SPF_request_query_mailfrom_d)(SPF_request_t *spf_request, SPF_response_t **spf_responsep) __attribute__ ((common)) = NULL;
-SPF_errcode_t (*SPF_dns_zone_add_str_d)(SPF_dns_server_t *spf_dns_server, const char *domain, ns_type rr_type, SPF_dns_stat_t herrno, const char *data) __attribute__ ((common)) = NULL;
+////! SPF
+//void (*SPF_server_free_d)(SPF_server_t *sp) __attribute__ ((common)) = NULL;
+//void (*SPF_request_free_d)(SPF_request_t *sr) __attribute__ ((common)) = NULL;
+//void (*SPF_response_free_d)(SPF_response_t *rp) __attribute__ ((common)) = NULL;
+//const char * (*SPF_strreason_d)(SPF_reason_t reason) __attribute__ ((common)) = NULL;
+//const char * (*SPF_strresult_d)(SPF_result_t result) __attribute__ ((common)) = NULL;
+//const char * (*SPF_strerror_d)(SPF_errcode_t spf_err) __attribute__ ((common)) = NULL;
+//SPF_reason_t (*SPF_response_reason_d)(SPF_response_t *rp) __attribute__ ((common)) = NULL;
+//SPF_result_t (*SPF_response_result_d)(SPF_response_t *rp) __attribute__ ((common)) = NULL;
+//SPF_request_t * (*SPF_request_new_d)(SPF_server_t * spf_server) __attribute__ ((common)) = NULL;
+//void (*SPF_get_lib_version_d)(int *major, int *minor, int *patch) __attribute__ ((common)) = NULL;
+//int (*SPF_request_set_env_from_d)(SPF_request_t *sr, const char *from) __attribute__ ((common)) = NULL;
+//SPF_server_t * (*SPF_server_new_d)(SPF_server_dnstype_t dnstype, int debug) __attribute__ ((common)) = NULL;
+//SPF_errcode_t (*SPF_request_set_helo_dom_d)(SPF_request_t *sr, const char *dom) __attribute__ ((common)) = NULL;
+//SPF_errcode_t	(*SPF_request_set_ipv4_d)(SPF_request_t *sr, struct in_addr addr) __attribute__ ((common)) = NULL;
+//SPF_errcode_t	(*SPF_request_set_ipv6_d)(SPF_request_t *sr, struct in6_addr addr) __attribute__ ((common)) = NULL;
+//SPF_dns_server_t * (*SPF_dns_zone_new_d)(SPF_dns_server_t *layer_below, const char *name, int debug) __attribute__ ((common)) = NULL;
+//SPF_errcode_t (*SPF_request_query_mailfrom_d)(SPF_request_t *spf_request, SPF_response_t **spf_responsep) __attribute__ ((common)) = NULL;
+//SPF_errcode_t (*SPF_dns_zone_add_str_d)(SPF_dns_server_t *spf_dns_server, const char *domain, ns_type rr_type, SPF_dns_stat_t herrno, const char *data) __attribute__ ((common)) = NULL;
 
 //! TOKYO
 char **tcversion_d __attribute__ ((common)) = NULL;
