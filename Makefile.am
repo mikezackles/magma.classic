@@ -101,6 +101,8 @@ libnetwork_a_CPPFLAGS = \
 		-I$(top_srcdir)/build_lib/sources/jpeg \
 		-I$(top_srcdir)/build_lib/sources/freetype/include
 libnetwork_a_SOURCES = \
-		src/network/addresses.c
+		src/network/addresses.c \
+		src/network/clients.c \
+		src/network/connections.c
 #libproviders_a_SOURCES = \
 #		src/providers/checkers/clamav.c

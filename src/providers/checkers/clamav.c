@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 /**
  * The virus engine spool directory.

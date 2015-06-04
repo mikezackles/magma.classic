@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "network/network.h"
+
+#include "providers/cryptography/cryptography.h"
 
 
 /**

@@ -10,7 +10,15 @@
  *
  */
 
-#include "magma.h"
+#include "network/network.h"
+
+#include "engine/status/status.h"
+#include "servers/pop/pop.h"
+#include "servers/imap/imap.h"
+#include "servers/http/http.h"
+#include "servers/smtp/smtp.h"
+#include "servers/molten/molten.h"
+#include "providers/cryptography/cryptography.h"
 
 /**
  * @brief	Return the security level of a specified connection.

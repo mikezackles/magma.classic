@@ -13,6 +13,9 @@
 #ifndef MAGMA_SERVERS_SMTP_H
 #define MAGMA_SERVERS_SMTP_H
 
+#include "objects/neue/neue.h"
+#include "providers/database/database.h"
+
 /// accept.c
 int_t   smtp_accept_message(connection_t *con, smtp_inbound_prefs_t *prefs);
 int_t   smtp_rollout(smtp_inbound_prefs_t *prefs);
