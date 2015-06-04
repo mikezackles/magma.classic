@@ -21,12 +21,6 @@ typedef struct {
 	bool_t required; /* Is this setting required? */
 } cache_keys_t;
 
-typedef struct {
-	char *name; /* The cache name. */
-	uint32_t port; /* The cache port. */
-	uint32_t weight; /* The key space weight. */
-} cache_t;
-
 /************  CACHE  ************/
 void cache_free (void);
 bool_t cache_validate (void);

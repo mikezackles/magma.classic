@@ -13,20 +13,6 @@
 #ifndef MAGMA_ENGINE_CONFIG_SERVERS_H
 #define MAGMA_ENGINE_CONFIG_SERVERS_H
 
-typedef enum {
-	TCP_PORT = 1,
-	SSL_PORT
-} M_PORT;
-
-typedef enum {
-	MOLTEN = 1,
-	HTTP,
-	POP,
-	IMAP,
-	SMTP,
-	SUBMISSION
-} M_PROTOCOL;
-
 typedef struct {
 	size_t offset; /* The location in memory to store the setting value. */
 	multi_t norm; /* The default value. */
@@ -34,29 +20,6 @@ typedef struct {
 	chr_t *description; /* Description of the setting and its default value. */
 	bool_t required; /* Is this setting required? */
 } server_keys_t;
-
-typedef struct {
-	struct {
-		SSL_CTX *context;
-		char *certificate;
-	} ssl;
-	struct {
-		int sockd;
-		bool_t ipv6;
-		uint32_t port;
-		uint32_t timeout;
-		uint32_t listen_queue;
-		M_PORT type;
-	} network;
-	struct {
-		uint32_t delay;
-		uint32_t cutoff;
-	} violations;
-	bool_t enabled;
-	stringer_t *name, *domain;
-	M_PROTOCOL protocol;
-} server_t;
-
 
 // A linked list of servers.
 typedef struct {

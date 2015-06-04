@@ -21,13 +21,6 @@ typedef struct {
 	bool_t required; /* Is this setting required? */
 } relay_keys_t;
 
-typedef struct {
-	bool_t secure; /* Use SSL. */
-	bool_t premium; /* Reserve for premium users. */
-	chr_t *name; /* The relay name. */
-	uint32_t port; /* The relay port. */
-} relay_t;
-
 void relay_free (void);
 bool_t relay_validate (void);
 void relay_output_settings (void);
