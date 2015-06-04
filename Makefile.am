@@ -2,6 +2,28 @@
 ACLOCAL_AMFLAGS = -I m4 --install
 EXTRA_DIST = m4/NOTES
 
+# Note that we specify the include directories for the bundled dependencies
+# here.
+AM_CPPFLAGS = \
+		-I$(top_srcdir)/src \
+		-I$(top_srcdir)/build_lib/sources/spf2/src/include \
+		-I$(top_srcdir)/build_lib/sources/clamav/libclamav \
+		-I$(top_srcdir)/build_lib/sources/mysql/include \
+		-I$(top_srcdir)/build_lib/sources/openssl/include \
+		-I$(top_srcdir)/build_lib/sources/lzo/include \
+		-I$(top_srcdir)/build_lib/sources/xml2/include \
+		-I$(top_srcdir)/build_lib/sources/zlib \
+		-I$(top_srcdir)/build_lib/sources/bzip2 \
+		-I$(top_srcdir)/build_lib/sources/tokyocabinet \
+		-I$(top_srcdir)/build_lib/sources/memcached \
+		-I$(top_srcdir)/build_lib/sources/dkim/libopendkim \
+		-I$(top_srcdir)/build_lib/sources/dspam/src \
+		-I$(top_srcdir)/build_lib/sources/jansson/src \
+		-I$(top_srcdir)/build_lib/sources/gd \
+		-I$(top_srcdir)/build_lib/sources/png \
+		-I$(top_srcdir)/build_lib/sources/jpeg \
+		-I$(top_srcdir)/build_lib/sources/freetype/include
+
 noinst_LIBRARIES = \
 		libnetwork.a
 #		libmagmacore.a \
@@ -81,25 +103,6 @@ noinst_LIBRARIES = \
 #		check/core/runner.c
 #core_tests_LDADD = libmagmacore_check.a libmagmacore.a
 
-libnetwork_a_CPPFLAGS = \
-		-I$(top_srcdir)/src \
-		-I$(top_srcdir)/build_lib/sources/spf2/src/include \
-		-I$(top_srcdir)/build_lib/sources/clamav/libclamav \
-		-I$(top_srcdir)/build_lib/sources/mysql/include \
-		-I$(top_srcdir)/build_lib/sources/openssl/include \
-		-I$(top_srcdir)/build_lib/sources/lzo/include \
-		-I$(top_srcdir)/build_lib/sources/xml2/include \
-		-I$(top_srcdir)/build_lib/sources/zlib \
-		-I$(top_srcdir)/build_lib/sources/bzip2 \
-		-I$(top_srcdir)/build_lib/sources/tokyocabinet \
-		-I$(top_srcdir)/build_lib/sources/memcached \
-		-I$(top_srcdir)/build_lib/sources/dkim/libopendkim \
-		-I$(top_srcdir)/build_lib/sources/dspam/src \
-		-I$(top_srcdir)/build_lib/sources/jansson/src \
-		-I$(top_srcdir)/build_lib/sources/gd \
-		-I$(top_srcdir)/build_lib/sources/png \
-		-I$(top_srcdir)/build_lib/sources/jpeg \
-		-I$(top_srcdir)/build_lib/sources/freetype/include
 libnetwork_a_SOURCES = \
 		src/network/addresses.c \
 		src/network/clients.c \
