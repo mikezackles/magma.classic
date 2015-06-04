@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "network/network.h"
+
+#include "providers/symbols.h"
+#include "providers/cryptography/cryptography.h"
 
 /// HIGH: Create a simpler method of triggering a queue event following a connection write operation, and audit the code
 /// to ensure write calls do not accidently orphan a connection by not queuing the connection upon completion.

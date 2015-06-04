@@ -106,6 +106,8 @@ libnetwork_a_SOURCES = \
 		src/network/connections.c \
 		src/network/listeners.c \
 		src/network/options.c \
-		src/network/read.c
+		src/network/read.c \
+		src/network/reverse.c \
+		src/network/write.c
 #libproviders_a_SOURCES = \
 #		src/providers/checkers/clamav.c

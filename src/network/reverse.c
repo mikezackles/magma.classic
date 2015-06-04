@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "network/network.h"
+
+#include "engine/controller/controller.h"
+#include "engine/status/status.h"
 
 /**
  * @brief	Queue a reverse DNS lookup on the specified connection, if one hasn't been performed.
