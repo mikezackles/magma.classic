@@ -103,6 +103,9 @@ libnetwork_a_CPPFLAGS = \
 libnetwork_a_SOURCES = \
 		src/network/addresses.c \
 		src/network/clients.c \
-		src/network/connections.c
+		src/network/connections.c \
+		src/network/listeners.c \
+		src/network/options.c \
+		src/network/read.c
 #libproviders_a_SOURCES = \
 #		src/providers/checkers/clamav.c

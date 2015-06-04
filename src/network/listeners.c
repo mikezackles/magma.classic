@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "network/network.h"
+
+#include "engine/status/status.h"
+#include "engine/config/servers/servers.h"
+#include "engine/controller/controller.h"
 
 /**
  * @brief	The main network handler entry point; poll the listening socket of each configured protocol server, and dispatch the

@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "network/network.h"
 
 /**
  * Controls whether to send periodic messages along idle socket connections to ensure the connected peer is still present. If the peer fails

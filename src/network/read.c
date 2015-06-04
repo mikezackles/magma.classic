@@ -9,7 +9,11 @@
  *
  */
 
-#include "magma.h"
+#include "network/network.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "engine/status/status.h"
+#include "providers/symbols.h"
 
 // HIGH: This whole file needs a lot more thought. Especially when returning values <= 0.
 
