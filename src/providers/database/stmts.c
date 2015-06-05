@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
+
+#include "queries.h"
 
 chr_t *queries[] = { QUERIES_INIT };
 

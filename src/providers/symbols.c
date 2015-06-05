@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 void *lib_magma = NULL;
 

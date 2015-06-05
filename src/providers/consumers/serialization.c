@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 /**
  * @brief	Serialize a size_t into a managed string.

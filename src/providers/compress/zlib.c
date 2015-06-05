@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 int (*deflateEnd_d)(z_streamp strm) = NULL;
 int (*deflate_d)(z_streamp strm, int flush) = NULL;

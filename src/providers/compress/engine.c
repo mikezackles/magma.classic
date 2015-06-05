@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 compress_t * engine_compress(uint8_t engine, stringer_t *s) {
 

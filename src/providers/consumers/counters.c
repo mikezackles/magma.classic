@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 int stamp_counter_check(char *key, size_t keylen, unsigned long interval) {
 

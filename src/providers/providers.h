@@ -28,12 +28,12 @@ bool_t lib_symbols(size_t count, symbol_t symbols[]);
 #include "symbols.h"
 
 #include "database/database.h"
-//#include "consumers/consumers.h"
+#include "consumers/consumers.h"
 #include "checkers/checkers.h"
-//#include "compress/compress.h"
-//#include "cryptography/cryptography.h"
-//#include "parsers/parsers.h"
-//#include "storage/storage.h"
-//#include "images/images.h"
+#include "compress/compress.h"
+#include "cryptography/cryptography.h"
+#include "parsers/parsers.h"
+#include "storage/storage.h"
+#include "images/images.h"
 
 #endif

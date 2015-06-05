@@ -10,8 +10,7 @@
  *
  */
 
-#include "magma.h"
-
+#include "providers/providers.h"
 
 /**
  * @brief	Look up a cipher type by name.

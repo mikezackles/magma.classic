@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 // The thread specific random number generator context.
 __thread uint_t rand_ctx = 0;

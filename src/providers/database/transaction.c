@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 /// LOW: Standardize how SQL connection and transaction handles are passed around. Some functions use int64_t, others use
 /// uint32_t. Perhaps we need to use a type def? Or perhaps create a similar type mapping for pool object handles?

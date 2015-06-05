@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 EC_GROUP *ecies_curve_group = NULL;
 const EVP_MD *ecies_hmac_evp = NULL;

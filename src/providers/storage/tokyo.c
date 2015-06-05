@@ -10,8 +10,7 @@
  *
  */
 
-
-#include "magma.h"
+#include "providers/providers.h"
 
 const char * lib_version_tokyo(void) {
 	return *tcversion_d;

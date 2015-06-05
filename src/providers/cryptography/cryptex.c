@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 /**
  * @brief	Get the length of a cryptex envelope.

@@ -118,4 +118,37 @@ libproviders_a_SOURCES = \
 		src/providers/checkers/clamav.c \
 		src/providers/checkers/dkim.c \
 		src/providers/checkers/dspam.c \
-		src/providers/checkers/spf.c
+		src/providers/checkers/spf.c \
+		src/providers/compress/bzip.c \
+		src/providers/compress/compress.c \
+		src/providers/compress/engine.c \
+		src/providers/compress/lzo.c \
+		src/providers/compress/zlib.c \
+		src/providers/consumers/cache.c \
+		src/providers/consumers/counters.c \
+		src/providers/consumers/deserialization.c \
+		src/providers/consumers/serialization.c \
+		src/providers/cryptography/ciphers.c \
+		src/providers/cryptography/cryptex.c \
+		src/providers/cryptography/digest.c \
+		src/providers/cryptography/ecies.c \
+		src/providers/cryptography/openssl.c \
+		src/providers/cryptography/random.c \
+		src/providers/cryptography/scramble.c \
+		src/providers/cryptography/symmetric.c \
+		src/providers/database/mysql.c \
+		src/providers/database/query.c \
+		src/providers/database/results.c \
+		src/providers/database/stmts.c \
+		src/providers/database/transaction.c \
+		src/providers/images/freetype.c \
+		src/providers/images/gd.c \
+		src/providers/images/jpeg.c \
+		src/providers/images/png.c \
+		src/providers/parsers/json.c \
+		src/providers/parsers/xml.c \
+		src/providers/storage/data.c \
+		src/providers/storage/tank.c \
+		src/providers/storage/tokyo.c \
+		src/providers/storage/tree.c \
+		src/providers/symbols.c

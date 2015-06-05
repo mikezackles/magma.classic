@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 chr_t xml_version_string[8];
 extern pthread_mutex_t log_mutex;

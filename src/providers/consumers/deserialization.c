@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 /**
  * @brief	Count the number of bytes before a semicolon or non-numeric character is found.

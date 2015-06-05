@@ -144,7 +144,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 pool_t *sql_pool = NULL;
 

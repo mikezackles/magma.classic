@@ -10,8 +10,7 @@
  *
  */
 
-
-#include "magma.h"
+#include "providers/providers.h"
 
 /**
  * @brief	Initialize the lzo library and bind dynamically to the exported functions that are required.

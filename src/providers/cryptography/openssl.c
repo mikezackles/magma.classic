@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 char ssl_version[16];
 pthread_mutex_t **ssl_locks = NULL;

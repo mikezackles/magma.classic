@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 digest_t * digest_name(stringer_t *name) {
 

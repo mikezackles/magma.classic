@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
+
+#include "queries.h"
 
 /**
  * @brief	Insert a tank object into the mysql database.

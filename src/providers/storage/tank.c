@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 uint64_t tanks_num = 4;
 uint64_t tanks_next = 0;

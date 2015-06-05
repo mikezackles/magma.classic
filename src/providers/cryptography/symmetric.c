@@ -10,8 +10,7 @@
  *
  */
 
-#include "magma.h"
-
+#include "providers/providers.h"
 
 /**
  * @brief	Encrypt a block of data using a symmetric cipher.

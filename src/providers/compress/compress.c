@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 /**
  * @brief	Get the compression engine's (LZO1X-1) block size.

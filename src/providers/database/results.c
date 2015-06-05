@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 // QUESTION: The res_field_ family of functions should probably be able to communicate an error... right?
 

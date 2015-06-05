@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
 
 /// TODO: Create envelope functions to translate the scrambled buffer into a condensed/encoded stringer.
 
