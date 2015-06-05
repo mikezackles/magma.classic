@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
+
+#include "engine/status/status.h"
 
 chr_t dkim_version[8];
 DKIM_LIB *dkim_engine = NULL;

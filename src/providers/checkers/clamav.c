@@ -12,6 +12,8 @@
 
 #include "providers/providers.h"
 
+#include "engine/status/status.h"
+
 /**
  * The virus engine spool directory.
  */

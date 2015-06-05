@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "providers/providers.h"
+
+#include "objects/mail/mail.h"
+#include "engine/status/status.h"
 
 // #define MAGMA_SPF_DEBUG
 

@@ -25,7 +25,8 @@ AM_CPPFLAGS = \
 		-I$(top_srcdir)/build_lib/sources/freetype/include
 
 noinst_LIBRARIES = \
-		libnetwork.a
+		libnetwork.a \
+		libproviders.a
 #		libmagmacore.a \
 #		libmagmacore_check.a \
 #		libproviders.a
@@ -112,5 +113,9 @@ libnetwork_a_SOURCES = \
 		src/network/read.c \
 		src/network/reverse.c \
 		src/network/write.c
-#libproviders_a_SOURCES = \
-#		src/providers/checkers/clamav.c
+
+libproviders_a_SOURCES = \
+		src/providers/checkers/clamav.c \
+		src/providers/checkers/dkim.c \
+		src/providers/checkers/dspam.c \
+		src/providers/checkers/spf.c
