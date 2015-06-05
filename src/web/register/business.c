@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "servers/http/http.h"
+#include "providers/database/database.h"
+#include "servers/smtp/smtp.h"
 
 /**
  * @brief	Determine whether a registered password is valid.

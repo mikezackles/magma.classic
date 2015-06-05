@@ -10,7 +10,12 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/database/database.h"
+#include "queries.h"
+#include "objects/users/users.h"
+#include "providers/consumers/consumers.h"
 
 /**
  * @brief	Free a spam signature object.

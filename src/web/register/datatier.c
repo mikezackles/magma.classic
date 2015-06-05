@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/database/database.h"
+#include "queries.h"
+#include "objects/users/users.h"
 
 /// HIGH: The prepared statements being used aren't valid. The queries need to be copied over and created.
 /// register_fetch_blocklist still needs to be defined.

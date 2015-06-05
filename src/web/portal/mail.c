@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "objects/warehouse/warehouse.h"
+#include "servers/smtp/smtp.h"
+#include "providers/checkers/checkers.h"
 
 /**
  * @brief	Perform a series of security-related checks on an outbound email message in a transport-independent manner.

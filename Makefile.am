@@ -30,7 +30,8 @@ noinst_LIBRARIES = \
 		libproviders.a \
 		libengine.a \
 		libobjects.a \
-		libservers.a
+		libservers.a \
+		libweb.a
 #		libmagmacore.a \
 #		libmagmacore_check.a \
 #		libproviders.a
@@ -260,3 +261,27 @@ libservers_a_SOURCES = \
 		src/servers/smtp/session.c \
 		src/servers/smtp/smtp.c \
 		src/servers/smtp/transmit.c
+
+libweb_a_SOURCES = \
+		src/web/contact/abuse.c \
+		src/web/contact/business.c \
+		src/web/contact/contact.c \
+		src/web/portal/config.c \
+		src/web/portal/contacts.c \
+		src/web/portal/endpoint.c \
+		src/web/portal/flags.c \
+		src/web/portal/folders.c \
+		src/web/portal/mail.c \
+		src/web/portal/messages.c \
+		src/web/portal/parse.c \
+		src/web/portal/portal.c \
+		src/web/register/abuse.c \
+		src/web/register/business.c \
+		src/web/register/captcha.c \
+		src/web/register/datatier.c \
+		src/web/register/register.c \
+		src/web/register/sessions.c \
+		src/web/statistics/datatier.c \
+		src/web/statistics/statistics.c \
+		src/web/teacher/datatier.c \
+		src/web/teacher/teacher.c

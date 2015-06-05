@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "servers/http/http.h"
+#include "providers/parsers/parsers.h"
 
 extern statistics_vp_t portal_stats[portal_stat_users_num_statements];
 

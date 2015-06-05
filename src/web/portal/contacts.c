@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/symbols.h"
 
 /// TODO: Right now this function doesn't really do anything. It needs to be updated if/once flag values are determined.
 /**

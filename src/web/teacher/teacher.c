@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "servers/http/http.h"
+#include "providers/parsers/parsers.h"
+#include "providers/checkers/checkers.h"
 
 /**
  * @brief	Display a custom message to the remote client using the teacher/message template.

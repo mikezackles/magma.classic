@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "servers/http/http.h"
+#include "providers/parsers/parsers.h"
 
 /**
  * @brief	Display the http portal login page.

@@ -10,8 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
 
+#include "providers/database/database.h"
+#include "queries.h"
 
 #define PORTAL_STATISTICS_TIMEOUT	300 /* check if more than 5 minutes old */
 

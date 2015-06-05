@@ -15,6 +15,8 @@
 
 #include "objects/config/config.h"
 #include "objects/contacts/contacts.h"
+#include "objects/neue/neue.h"
+#include "objects/mail/mail.h"
 
 #define MAGMA_PORTAL_VERSION	"1.02"
 

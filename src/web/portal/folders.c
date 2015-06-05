@@ -10,8 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
 
+#include "objects/users/users.h"
+#include "servers/imap/imap.h"
+#include "objects/objects.h"
 
 /**
  * @brief	Add a new mail folder for a user.

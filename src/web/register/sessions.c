@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "providers/consumers/consumers.h"
 
 /**
  * @brief	Destroy a registration session and all its associated data.

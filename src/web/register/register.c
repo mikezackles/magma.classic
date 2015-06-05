@@ -10,8 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
 
+#include "servers/http/http.h"
+#include "providers/cryptography/cryptography.h"
 
 /**
  * @brief	Display a custom message to the remote client using the register/message template.

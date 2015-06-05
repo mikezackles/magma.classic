@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/symbols.h"
+#include "providers/cryptography/cryptography.h"
+#include "objects/users/users.h"
 
 /***
  * Build the meta response section, or return NULL if an error occurs.

@@ -13,6 +13,8 @@
 #ifndef MAGMA_WEB_H
 #define MAGMA_WEB_H
 
+#include "magma_common.h"
+
 #include "contact/contact.h"
 #include "portal/portal.h"
 #include "register/register.h"

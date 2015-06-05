@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/consumers/consumers.h"
 
 /**
  * @brief	Increment the contact abuse history counter for an IP address.

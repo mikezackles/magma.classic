@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/symbols.h"
+#include "objects/users/users.h"
 
 /// TODO: The messages.load method uses the flags/tags helper functions, but the messages.list and the messages.tags/flags methods
 /// still need to be updated.

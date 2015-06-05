@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/symbols.h"
 
 /**
  * @brief	Parse a json string array into a linked list of managed strings.

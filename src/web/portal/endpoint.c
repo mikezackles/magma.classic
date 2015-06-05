@@ -10,8 +10,14 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
 #include "methods.h"
+#include "providers/symbols.h"
+#include "servers/http/http.h"
+#include "servers/imap/imap.h"
+#include "objects/objects.h"
+#include "providers/database/database.h"
 
 /// TODO: We use session locks to synchronize access to the user context. Should we also be using mailbox cluster locks? Cluster level locking
 /// might be appropriate for operations that delete data likes folders.remove and messages.remove.

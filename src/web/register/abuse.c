@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "engine/status/status.h"
+#include "providers/consumers/consumers.h"
 
 inx_t *register_blocklist = NULL;
 pthread_rwlock_t register_blocklist_lock = PTHREAD_RWLOCK_INITIALIZER;

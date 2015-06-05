@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "servers/http/http.h"
+#include "providers/parsers/parsers.h"
+#include "servers/smtp/smtp.h"
 
 /**
  * @brief	Return the contact/abuse page with a marked error indicator for the user in the event of a user submission error.

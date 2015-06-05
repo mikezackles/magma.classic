@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/symbols.h"
 
 /**
  * @brief	Get a user config entry's flags as a json object.

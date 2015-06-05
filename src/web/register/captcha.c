@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "web/web.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "providers/symbols.h"
 
 /// LOW: We shouldn't have to actually scan the fonts directory to find a valid file. Instead we could cache a list of valid fonts and then pick from it randomly.
 /**
