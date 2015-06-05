@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "objects/mail/mail.h"
 
 /**
  * @brief	Prepare a thread to exit by destroying its mysql and openssl-specific and associated mail cache data.

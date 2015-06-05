@@ -13,6 +13,9 @@
 #ifndef MAGMA_WEB_PORTAL_H
 #define MAGMA_WEB_PORTAL_H
 
+#include "objects/config/config.h"
+#include "objects/contacts/contacts.h"
+
 #define MAGMA_PORTAL_VERSION	"1.02"
 
 // Definitions for the json-rpc 2.0 protocol specification

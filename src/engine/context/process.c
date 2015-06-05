@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
+
+#include "objects/objects.h"
+#include "providers/providers.h"
+#include "servers/http/http.h"
 
 extern bool_t exit_and_dump;
 uint64_t day = 0;

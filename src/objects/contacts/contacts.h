@@ -13,6 +13,8 @@
 #ifndef MAGMA_OBJECTS_CONTACTS_H
 #define MAGMA_OBJECTS_CONTACTS_H
 
+#include "objects/folders/folders.h"
+
 enum {
 	CONTACT_DETAIL_FLAG_NONE = 0,
 	CONTACT_DETAIL_FLAG_CRITICAL = 1

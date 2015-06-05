@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
+
+#include "queries.h"
 
 /**
  * @brief	Retrieve this computer's host number from the database.

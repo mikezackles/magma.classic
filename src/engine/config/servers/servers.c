@@ -11,8 +11,11 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
+
 #include "keys.h"
+#include "network/network.h"
+#include "providers/cryptography/cryptography.h"
 
 /**
  * @brief	Get the number of servers that are configured to use a specified port.

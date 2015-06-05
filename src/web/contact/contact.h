@@ -13,6 +13,8 @@
 #ifndef MAGMA_WEB_CONTACT_H
 #define MAGMA_WEB_CONTACT_H
 
+#include "network/network.h"
+
 /// abuse.c
 bool_t  contact_abuse_checks(connection_t *con, chr_t *branch);
 void    contact_abuse_increment_history(connection_t *con);

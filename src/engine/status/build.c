@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
 #include "build.h"
 
 #ifndef MAGMA_BUILD

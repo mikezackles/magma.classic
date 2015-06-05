@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
 
 struct {
 	pid_t pid;

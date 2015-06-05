@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
 
 /**
  * @brief	Perform a chroot() on the directory specified in the config option magma.system.root_directory, if it is set.

@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
+
+#include "network/network.h"
+#include "servers/http/http.h"
 
 pthread_mutex_t sig_hup_mutex = PTHREAD_MUTEX_INITIALIZER;
 

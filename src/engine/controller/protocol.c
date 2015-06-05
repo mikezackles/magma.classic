@@ -11,7 +11,16 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
+
+#include "network/network.h"
+#include "servers/http/http.h"
+#include "servers/pop/pop.h"
+#include "servers/imap/imap.h"
+#include "servers/smtp/smtp.h"
+#include "servers/molten/molten.h"
+#include "web/portal/portal.h"
+#include "providers/cryptography/cryptography.h"
 
 /**
  * @brief	Initialize all protocol modules, and prime their command arrays for binary searching.

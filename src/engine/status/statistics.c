@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
 
 struct {
 	size_t count;

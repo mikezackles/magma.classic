@@ -13,6 +13,8 @@
 #ifndef MAGMA_ENGINE_H
 #define MAGMA_ENGINE_H
 
+#include "magma_common.h"
+
 #include "context/context.h"
 #include "config/config.h"
 #include "status/status.h"

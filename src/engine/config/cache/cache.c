@@ -11,7 +11,8 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
+
 #include "keys.h"
 
 /**

@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
 
 // TODO: Clean up these functions and record the output in our stats table under the useless info heading.
 /*

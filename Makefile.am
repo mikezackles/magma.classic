@@ -1,7 +1,7 @@
 # Use m4 macros from m4
 ACLOCAL_AMFLAGS = -I m4 --install
 EXTRA_DIST = m4/NOTES
-AM_CFLAGS = -Wfatal-errors
+AM_CFLAGS = -Wfatal-errors -Werror
 
 # Note that we specify the include directories for the bundled dependencies
 # here.
@@ -27,7 +27,8 @@ AM_CPPFLAGS = \
 
 noinst_LIBRARIES = \
 		libnetwork.a \
-		libproviders.a
+		libproviders.a \
+		libengine.a
 #		libmagmacore.a \
 #		libmagmacore_check.a \
 #		libproviders.a
@@ -153,3 +154,22 @@ libproviders_a_SOURCES = \
 		src/providers/storage/tokyo.c \
 		src/providers/storage/tree.c \
 		src/providers/symbols.c
+
+libengine_a_SOURCES = \
+		src/engine/config/cache/cache.c \
+		src/engine/config/global/datatier.c \
+		src/engine/config/global/global.c \
+		src/engine/config/relay/relay.c \
+		src/engine/config/servers/servers.c \
+		src/engine/context/args.c \
+		src/engine/context/process.c \
+		src/engine/context/sanity.c \
+		src/engine/context/signal.c \
+		src/engine/context/system.c \
+		src/engine/context/thread.c \
+		src/engine/controller/protocol.c \
+		src/engine/controller/queue.c \
+		src/engine/status/build.c \
+		src/engine/status/performance.c \
+		src/engine/status/statistics.c \
+		src/engine/status/status.c

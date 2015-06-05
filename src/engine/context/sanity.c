@@ -9,7 +9,12 @@
  * $Revision$
  *
  */
-#include "magma.h"
+
+#include "engine/engine.h"
+
+#include "network/network.h"
+#include "providers/providers.h"
+#include "queries.h"
 
 /**
  * @brief	Perform a series of system-wide sanity checks at process startup.

@@ -10,8 +10,11 @@
  * $Revision$
  *
  */
-#include "magma.h"
+#include "engine/engine.h"
+
 #include "keys.h"
+#include "web/contact/contact.h"
+#include "servers/smtp/smtp.h"
 
 __thread char threadBuffer[1024];
 magma_t magma = { .config.file = "magma.config" };

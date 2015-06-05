@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
 
 typedef struct {
 	void (*function)(void *data), (*requeue)(void *data), *data;

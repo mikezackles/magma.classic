@@ -11,7 +11,7 @@
  *
  */
 
-#include "magma.h"
+#include "engine/engine.h"
 
 extern stringer_t *cmdline_config_data;
 extern bool_t exit_and_dump;
