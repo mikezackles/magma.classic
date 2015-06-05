@@ -12,9 +12,9 @@
 #ifndef MAGMA_EXTERNAL_H
 #define MAGMA_EXTERNAL_H
 
-//// SPF
-//#include "spf.h"
-//#include "spf_dns_zone.h"
+// SPF
+#include "spf.h"
+#include "spf_dns_zone.h"
 
 // ClamAV
 #include "clamav.h"
