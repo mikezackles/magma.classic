@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 /**
  * @brief	Allocate and initialize a new user alias object.

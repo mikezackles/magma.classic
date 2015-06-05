@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 /**
  * @brief	Destroy a user config entry.

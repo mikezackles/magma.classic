@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/checkers/checkers.h"
 
 /**
  * @brief	Fetch the value of a specified line from a mail header, performing whitespace and line cleaning.

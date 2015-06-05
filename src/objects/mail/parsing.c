@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 /**
  * @brief	Get the domain portion of an email address.

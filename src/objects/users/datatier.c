@@ -10,7 +10,12 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/database/database.h"
+#include "queries.h"
+#include "providers/cryptography/cryptography.h"
+#include "engine/controller/controller.h"
 
 /**
  * @brief	Remove all user (non-system) flags from a collection of mail messages, and set the specified flags mask for them.

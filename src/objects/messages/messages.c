@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 //	struct {
 //		uint64_t num; /* Unique message number. */

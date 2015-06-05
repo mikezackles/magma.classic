@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/database/database.h"
 
 /// LOW: When the reliable job queue is working we can handle unlink errors by creating a job entry which will retry the
 /// unlink operation at a later time.

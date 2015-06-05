@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 static pthread_key_t mail_cache;
 

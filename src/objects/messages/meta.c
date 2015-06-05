@@ -10,8 +10,7 @@
  *
  */
 
-#include "magma.h"
-
+#include "objects/objects.h"
 
 /**
  * @brief	Free a meta message object (and its tags).

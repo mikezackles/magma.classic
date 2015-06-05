@@ -13,6 +13,8 @@
 #ifndef MAGMA_OBJECTS_H
 #define MAGMA_OBJECTS_H
 
+#include "magma_common.h"
+
 #include "warehouse/warehouse.h"
 #include "folders/folders.h"
 #include "contacts/contacts.h"

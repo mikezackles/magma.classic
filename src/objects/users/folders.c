@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 /**
  * @brief	Allocate a new meta tag stat object for tracking message tags.

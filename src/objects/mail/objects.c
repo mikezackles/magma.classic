@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/cryptography/cryptography.h"
 
 /**
  * @brief	Destroy an smtp message and free all of its underlying data.

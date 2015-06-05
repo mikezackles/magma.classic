@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "web/portal/portal.h"
 
 media_type_t media_types[] = {
 		{ "",       true,  "application/octet-stream"},

@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/database/database.h"
+#include "queries.h"
 
 /**
  * @brief	Fetch the list of configured domains from the database.

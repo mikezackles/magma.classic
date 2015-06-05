@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/database/database.h"
+#include "queries.h"
 
 /**
  * @brief	Delete a user config entry from the database by key.

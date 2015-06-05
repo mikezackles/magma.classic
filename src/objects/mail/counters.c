@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 /**
  * @brief	Count the number of "Received:" lines in a mail message.

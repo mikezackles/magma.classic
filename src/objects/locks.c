@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/consumers/consumers.h"
 
 #define MAGMA_LOCK_TIMEOUT 60
 #define MAGMA_LOCK_EXPIRATION 600

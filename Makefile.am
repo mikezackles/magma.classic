@@ -28,7 +28,8 @@ AM_CPPFLAGS = \
 noinst_LIBRARIES = \
 		libnetwork.a \
 		libproviders.a \
-		libengine.a
+		libengine.a \
+		libobjects.a
 #		libmagmacore.a \
 #		libmagmacore_check.a \
 #		libproviders.a
@@ -173,3 +174,48 @@ libengine_a_SOURCES = \
 		src/engine/status/performance.c \
 		src/engine/status/statistics.c \
 		src/engine/status/status.c
+
+libobjects_a_SOURCES = \
+		src/objects/config/config.c \
+		src/objects/config/datatier.c \
+		src/objects/contacts/contacts.c \
+		src/objects/contacts/datatier.c \
+		src/objects/contacts/find.c \
+		src/objects/folders/contacts.c \
+		src/objects/folders/datatier.c \
+		src/objects/folders/find.c \
+		src/objects/folders/folders.c \
+		src/objects/folders/messages.c \
+		src/objects/mail/cache.c \
+		src/objects/mail/cleanup.c \
+		src/objects/mail/counters.c \
+		src/objects/mail/datatier.c \
+		src/objects/mail/headers.c \
+		src/objects/mail/load_message.c \
+		src/objects/mail/mime.c \
+		src/objects/mail/objects.c \
+		src/objects/mail/parsing.c \
+		src/objects/mail/paths.c \
+		src/objects/mail/remove_message.c \
+		src/objects/mail/signatures.c \
+		src/objects/mail/store_message.c \
+		src/objects/messages/datatier.c \
+		src/objects/messages/messages.c \
+		src/objects/messages/meta.c \
+		src/objects/neue/credentials.c \
+		src/objects/neue/neue.c \
+		src/objects/sessions/sessions.c \
+		src/objects/users/alerts.c \
+		src/objects/users/aliases.c \
+		src/objects/users/contacts.c \
+		src/objects/users/datatier.c \
+		src/objects/users/folders.c \
+		src/objects/users/messages.c \
+		src/objects/users/users.c \
+		src/objects/warehouse/datatier.c \
+		src/objects/warehouse/domains.c \
+		src/objects/warehouse/patterns.c \
+		src/objects/warehouse/warehouse.c \
+		src/objects/locks.c \
+		src/objects/objects.c \
+		src/objects/serials.c

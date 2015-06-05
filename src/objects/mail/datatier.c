@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/database/database.h"
+#include "queries.h"
 
 /**
  * @brief	Set a message invisible in the database.

@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/compress/compress.h"
+#include "providers/consumers/consumers.h"
+#include "providers/cryptography/cryptography.h"
 
 /**
  * @brief	Get the header of a message, checking first in the cache and then on disk.

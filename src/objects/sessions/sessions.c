@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "engine/controller/controller.h"
 
 struct {
 	uint64_t number;

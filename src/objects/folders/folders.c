@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 /// TODO: The assumption is that message folders will start using the interface as well.
 

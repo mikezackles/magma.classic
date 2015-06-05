@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/database/database.h"
+#include "queries.h"
 
 /**
  * @brief	Populate a message folder with all of its child messages from the database.

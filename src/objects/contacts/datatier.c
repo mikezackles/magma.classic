@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/database/database.h"
+#include "queries.h"
 
 /**
  * @brief	Touch the last updated time stamp of a contact entry in the database.

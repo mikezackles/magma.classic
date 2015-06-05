@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 /**
  * @note	This function is not called from anywhere in the code and may be subject to removal.

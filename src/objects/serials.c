@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/consumers/consumers.h"
 
 stringer_t *serial_prefix_strings[] = {
 	 CONSTANT("user"),

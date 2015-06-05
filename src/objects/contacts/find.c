@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 /**
  * @note	This is a bit of a weird function that currently isn't being called from anywhere. It may or may not be here to stay.

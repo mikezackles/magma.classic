@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
 /// TODO: The serial number scheme needs to refreshing. There should be a serial number to indicate changes in the folder structure, and then
 /// individual serial numbers for each folder to indicate when the contents are changed. If that were the case this function really only needs to

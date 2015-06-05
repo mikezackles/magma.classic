@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "engine/status/status.h"
 
 inx_t *patterns_list = NULL;
 uint64_t patterns_stamp = 0;

@@ -10,8 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
 
+#include "providers/cryptography/cryptography.h"
+#include "providers/compress/compress.h"
+#include "providers/database/database.h"
 
 /**
  * @brief	Persist a message's data to disk.

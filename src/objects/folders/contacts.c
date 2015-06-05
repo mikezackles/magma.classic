@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "servers/imap/imap.h"
 
 /**
  * @brief	Free a contact folder object.

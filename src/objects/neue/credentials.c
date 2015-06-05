@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "providers/cryptography/cryptography.h"
 
 /// LOW: Add a function for detecting potentially illegal username/address sequences. Valid usernames must start with an alpha character,
 /// end with an alphanumeric character and not user consecutive underscores. If present, the domain portion of the username must follow the

@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "engine/status/status.h"
 
 object_cache_t objects = {
 	.users = NULL,

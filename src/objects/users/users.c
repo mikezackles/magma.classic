@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "objects/objects.h"
+
+#include "engine/status/status.h"
 
 /**
  * @brief	Increment a meta user's reference counter for a specified protocol and update the activity timestamp.
