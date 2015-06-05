@@ -1,6 +1,7 @@
 # Use m4 macros from m4
 ACLOCAL_AMFLAGS = -I m4 --install
 EXTRA_DIST = m4/NOTES
+AM_CFLAGS = -Wfatal-errors
 
 # Note that we specify the include directories for the bundled dependencies
 # here.
