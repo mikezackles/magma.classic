@@ -38,9 +38,9 @@ void pl_replace(placer_t *result, void *data, size_t len) {
 		log_error("NULL data pointer passed to pl_replace");
 	}
 
-	result.opts = PLACER_T | JOINTED | STACK | FOREIGNDATA;
-	result.data = data;
-	result.length = len;
+	result->opts = PLACER_T | JOINTED | STACK | FOREIGNDATA;
+	result->data = data;
+	result->length = len;
 }
 
 /**
