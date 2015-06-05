@@ -10,8 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
 #include "commands.h"
+#include "engine/controller/controller.h"
 
 // Compare points to the line read in via the network, while command points to the array of legal commands. Were trying to figure out if the line starts with a command we recognize.
 int_t molten_compare(const void *compare, const void *command) {

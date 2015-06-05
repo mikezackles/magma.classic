@@ -29,7 +29,8 @@ noinst_LIBRARIES = \
 		libnetwork.a \
 		libproviders.a \
 		libengine.a \
-		libobjects.a
+		libobjects.a \
+		libservers.a
 #		libmagmacore.a \
 #		libmagmacore_check.a \
 #		libproviders.a
@@ -219,3 +220,43 @@ libobjects_a_SOURCES = \
 		src/objects/locks.c \
 		src/objects/objects.c \
 		src/objects/serials.c
+
+libservers_a_SOURCES = \
+		src/servers/http/content.c \
+		src/servers/http/data.c \
+		src/servers/http/errors.c \
+		src/servers/http/http.c \
+		src/servers/http/parse.c \
+		src/servers/http/response.c \
+		src/servers/http/sessions.c \
+		src/servers/imap/commands.c \
+		src/servers/imap/fetch.c \
+		src/servers/imap/fetch_response.c \
+		src/servers/imap/flags.c \
+		src/servers/imap/folders.c \
+		src/servers/imap/imap.c \
+		src/servers/imap/messages.c \
+		src/servers/imap/output.c \
+		src/servers/imap/parse.c \
+		src/servers/imap/parse_address.c \
+		src/servers/imap/range.c \
+		src/servers/imap/search.c \
+		src/servers/imap/sessions.c \
+		src/servers/molten/commands.c \
+		src/servers/molten/molten.c \
+		src/servers/molten/sessions.c \
+		src/servers/pop/commands.c \
+		src/servers/pop/mailbox.c \
+		src/servers/pop/parse.c \
+		src/servers/pop/pop.c \
+		src/servers/pop/sessions.c \
+		src/servers/smtp/accept.c \
+		src/servers/smtp/checkers.c \
+		src/servers/smtp/commands.c \
+		src/servers/smtp/datatier.c \
+		src/servers/smtp/messages.c \
+		src/servers/smtp/parse.c \
+		src/servers/smtp/relay.c \
+		src/servers/smtp/session.c \
+		src/servers/smtp/smtp.c \
+		src/servers/smtp/transmit.c

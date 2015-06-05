@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "providers/symbols.h"
+#include "objects/sessions/sessions.h"
 
 /**
  * @brief	Reset a client http connection to its original, uninitialized state.

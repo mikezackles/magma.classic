@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 void imap_fetch_response_free(imap_fetch_response_t *response) {
 

@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 /**
  * @brief	Reset an SMTP session to its initialized state.

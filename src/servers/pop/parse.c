@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 /**
  * @brief	Parse the argument to a POP3 command as an unsigned number.

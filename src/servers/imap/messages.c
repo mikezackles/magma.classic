@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/objects.h"
 
 int_t imap_append_message(connection_t *con, meta_folder_t *folder, uint32_t flags, stringer_t *message, uint64_t *outnum) {
 

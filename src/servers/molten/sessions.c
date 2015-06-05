@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 void molten_session_destroy(connection_t *con) {
 	return;

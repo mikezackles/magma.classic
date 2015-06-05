@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "providers/cryptography/cryptography.h"
 
 /**
  * @brief	Issue an smtp client QUIT command.

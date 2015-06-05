@@ -10,8 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
 #include "commands.h"
+#include "engine/status/status.h"
+#include "engine/controller/controller.h"
 
 int_t smtp_compare(const void *compare, const void *command) {
 

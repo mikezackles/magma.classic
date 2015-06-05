@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 stringer_t * imap_range_build(size_t length, uint64_t *numbers) {
 

@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "providers/consumers/consumers.h"
 
 /**
  * @brief	Check to see if a transmitting address is in a user's greylist.

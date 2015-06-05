@@ -13,6 +13,8 @@
 #ifndef MAGMA_SERVERS_HTTP_H
 #define MAGMA_SERVERS_HTTP_H
 
+#include "network/network.h"
+
 enum {
 	HTTP_CONNECTION_CLOSE = -1,
 	HTTP_CONNECTION_NEUTRAL = 0,

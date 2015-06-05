@@ -13,6 +13,8 @@
 #ifndef MAGMA_SERVERS_H
 #define MAGMA_SERVERS_H
 
+#include "magma_common.h"
+
 #define M_SSL_BIO_NOCLOSE		0x00
 
 #include "http/http.h"

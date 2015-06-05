@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "engine/status/status.h"
+#include "engine/controller/controller.h"
 
 /**
  * @brief	Close a connection corresponding to an http session.

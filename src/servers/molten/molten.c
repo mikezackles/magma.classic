@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "engine/status/status.h"
+#include "engine/controller/controller.h"
 
 void molten_stats(connection_t *con) {
 

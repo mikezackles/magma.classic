@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/sessions/sessions.h"
+#include "providers/symbols.h"
 
 /**
  * @brief	Get the origin of a resource from a url.

@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 /// LOW: The list of characters allowed in an email address needs to be verified against the RFC's.
 /// LOW: The parser should use different lists of valid characters for the the local and domain portions of an email address.

@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/objects.h"
 
 /**
  * @brief	Reset a POP3 session by guaranteeing that no messages are flagged to be deleted.

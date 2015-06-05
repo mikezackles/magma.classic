@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/objects.h"
+#include "providers/cryptography/cryptography.h"
+#include "providers/checkers/checkers.h"
 
 /**
  * @brief	Store a received SMTP message as a generic mail message, both on disk and in the database.

@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/users/users.h"
+#include "objects/messages/messages.h"
 
 // Checks for a valid sequence range.
 int_t imap_valid_sequence(stringer_t *range) {

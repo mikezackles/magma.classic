@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/objects.h"
 
 /**
  * Returns 0 if the selected folder wasn't modified, or 1 if things changed and the updated status should be sent to the client. A -1

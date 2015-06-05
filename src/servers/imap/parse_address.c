@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 /// LOW: Do we need an imap_parse_address_group() function?
 

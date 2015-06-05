@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 stringer_t * imap_build_array_isliteral(placer_t data) {
 

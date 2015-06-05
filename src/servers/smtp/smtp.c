@@ -10,7 +10,13 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "engine/status/status.h"
+#include "providers/checkers/checkers.h"
+#include "objects/warehouse/warehouse.h"
+#include "engine/controller/controller.h"
 
 /// TODO: Review error messages and update them with the appropriate response code.
 

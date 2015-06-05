@@ -10,7 +10,12 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "engine/status/status.h"
+#include "objects/users/users.h"
+#include "objects/messages/messages.h"
 
 /// TODO: Review error messages and update them with the appropriate response code.
 

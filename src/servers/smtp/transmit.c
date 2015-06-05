@@ -10,7 +10,12 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "providers/checkers/checkers.h"
+#include "objects/objects.h"
+#include "providers/consumers/consumers.h"
 
 /**
  * @brief	Relay an outbound smtp message for a user.

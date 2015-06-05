@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "providers/parsers/parsers.h"
 
 struct {
 	inx_t *fonts, *pages, *templates;

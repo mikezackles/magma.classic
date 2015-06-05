@@ -10,8 +10,13 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
+#include "providers/consumers/consumers.h"
+#include "providers/database/database.h"
+#include "queries.h"
+#include "objects/warehouse/warehouse.h"
+#include "objects/users/users.h"
 
 /**
  * @brief	Parse an smtp event action string from the Dispatch table.

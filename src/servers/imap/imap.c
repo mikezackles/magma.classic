@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "providers/cryptography/cryptography.h"
+#include "engine/status/status.h"
+#include "objects/objects.h"
 
 /// TODO: Review error messages and update them with the appropriate response code.
 /// LOW: When should we check the serial number to see if the local data is stale and needs to be refreshed?

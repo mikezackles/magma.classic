@@ -10,7 +10,14 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "engine/status/status.h"
+#include "web/portal/portal.h"
+#include "web/register/register.h"
+#include "web/contact/contact.h"
+#include "web/teacher/teacher.h"
+#include "web/statistics/statistics.h"
 
 /**
  * @brief	Get a descriptive string for a numerical http status code.

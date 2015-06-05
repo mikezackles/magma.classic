@@ -10,7 +10,10 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/users/users.h"
+#include "objects/folders/folders.h"
 
 /// TODO: Since the Portal needs access to some of these folder manipulation functions the common logic should be extracted
 /// and moved into the folder object interface.

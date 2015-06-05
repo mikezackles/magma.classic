@@ -9,7 +9,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 /// TODO: The logic here is just plain ugly. Specifically the logic used to read from the network and advance the buffers.
 

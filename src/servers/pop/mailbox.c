@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/users/users.h"
 
 /**
  * @brief	Get the number of messages available to a POP3 user.

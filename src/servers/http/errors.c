@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
 
 /**
  * @brief	Redirect the browser to a new location with an HTTP 301 response.

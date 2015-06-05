@@ -14,6 +14,7 @@
 #define MAGMA_OBJECTS_MESSAGES_H
 
 #include "network/meta.h"
+#include "objects/folders/folders.h"
 
 /// LOW: Update the Messages table columns so they match the tank mail message header fields. Store individual header/body lengths and the compressed/uncompressed hash values;
 /// then update the message type to store and use the new information.

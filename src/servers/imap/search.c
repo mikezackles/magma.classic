@@ -10,7 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/users/users.h"
+#include "objects/messages/messages.h"
+#include "engine/status/status.h"
 
 chr_t *MONTH_LOOKUP[] = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
 

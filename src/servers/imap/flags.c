@@ -10,7 +10,9 @@
  *
  */
 
-#include "magma.h"
+#include "servers/servers.h"
+
+#include "objects/users/users.h"
 
 uint32_t imap_get_flag(stringer_t *string) {
 
