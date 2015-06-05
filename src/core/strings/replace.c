@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /*
  * @brief	Replace all instances of a substring inside another string.

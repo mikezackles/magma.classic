@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Count the number of times a token is found in a specified block of memory.

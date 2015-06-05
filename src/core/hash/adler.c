@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Return an Adler-32 hash of the specified data.

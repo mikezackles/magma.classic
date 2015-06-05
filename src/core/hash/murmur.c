@@ -10,8 +10,7 @@
  *
  */
 
-#include "core.h"
-
+#include "magma_common.h"
 
 /**
  * @brief	Generate a 32-bit Murmur hash of a block of data.

@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Reset the position of an inx cursor.

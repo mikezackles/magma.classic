@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Determine whether a character is a valid hexadecimal (base 16) character.

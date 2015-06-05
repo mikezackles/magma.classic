@@ -9,7 +9,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Get the contents of a file on disk.

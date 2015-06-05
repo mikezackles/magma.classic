@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 enum {
 	MM_SEC_CHUNK_AVAILABLE = 0,
@@ -348,13 +348,13 @@ bool_t mm_sec_start(void) {
 	uchr_t *bndptr;
 	chr_t buf[1024];
 
-	if (!(secure.enabled = core_config.secure.memory.enable)) {
+	if (!(secure.enabled = magma.secure.memory.enable)) {
 		log_pedantic("Secure memory management disabled.");
 		return true;
 	}
 
 	// Ensure the page length is positive.
-	if ((alignment = core_config.page_length) <= 0) {
+	if ((alignment = magma.page_length) <= 0) {
 		log_pedantic("Invalid page size.");
 		return false;
 	}
@@ -364,13 +364,13 @@ bool_t mm_sec_start(void) {
 	}
 
 	// Ensure the default length for secure memory slabs is greater than zero and is aligned by the page table size.
-	if ((secure.slab.length = (core_config.secure.memory.length + alignment - 1) & ~(alignment - 1)) < MM_SEC_POOL_LENGTH_MIN) {
+	if ((secure.slab.length = (magma.secure.memory.length + alignment - 1) & ~(alignment - 1)) < MM_SEC_POOL_LENGTH_MIN) {
 		log_pedantic("The secure memory pool size is too small. {length = %zu / min = %i}", secure.slab.length, MM_SEC_POOL_LENGTH_MIN);
 		return false;
 	}
 
 	// Allocate secured boundary pages around the secure slab to prevent against memory underflows and overflows.
-	secure.slab.length_true = secure.slab.length + (core_config.page_length * 2);
+	secure.slab.length_true = secure.slab.length + (magma.page_length * 2);
 
 	// Request an anonymous memory mapping that is aligned according to the system page size. Were asking the kernel to lock returned block into memory.
 	if ((secure.slab.data_true = mmap64(NULL, secure.slab.length_true, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS | MAP_LOCKED, -1, 0)) == MAP_FAILED) {
@@ -380,16 +380,16 @@ bool_t mm_sec_start(void) {
 
 	bndptr = secure.slab.data_true;
 
-	if (mprotect(bndptr, core_config.page_length, PROT_NONE)) {
+	if (mprotect(bndptr, magma.page_length, PROT_NONE)) {
 		log_pedantic("Unable to set protections on lower secure memory boundary chunk.");
 		return false;
 	}
 
-	bndptr += core_config.page_length;
+	bndptr += magma.page_length;
 	secure.slab.data = bndptr;
 	bndptr += secure.slab.length;
 
-	if (mprotect(bndptr, core_config.page_length, PROT_NONE)) {
+	if (mprotect(bndptr, magma.page_length, PROT_NONE)) {
 		log_pedantic("Unable to set protections on upper secure memory boundary chunk.");
 		return false;
 	}

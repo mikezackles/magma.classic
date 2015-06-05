@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Get the id of the calling thread.
@@ -38,7 +38,7 @@ int_t thread_launch(pthread_t *thread, void *function, void *data) {
 		log_pedantic("Could not initialize the thread attribute structure. {pthread_attr_init = %i}", result);
 		return result;
 	}
-	else if ((result = pthread_attr_setstacksize(&attributes, core_config.system.thread_stack_size))) {
+	else if ((result = pthread_attr_setstacksize(&attributes, magma.system.thread_stack_size))) {
 		log_pedantic("Could not set the stack size correctly. {pthread_attr_setstacksize = %i}", result);
 		pthread_attr_destroy(&attributes);
 		return result;

@@ -10,7 +10,7 @@
  *
  */
 
-#include "magma.h"
+#include "magma_common.h"
 
 /**
  *

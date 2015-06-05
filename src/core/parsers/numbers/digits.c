@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Count the number of digits needed to represent a base-10 64-bit unsigned integer.

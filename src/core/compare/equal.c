@@ -10,8 +10,7 @@
  *
  */
 
-#include "core.h"
-
+#include "magma_common.h"
 
 /**
  * @brief	Perform a case-sensitive comparison of two memory blocks.

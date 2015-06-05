@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Check to see if a specified directory exists, or if specified, create it if it doesn't exist.

@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Free a managed string.
@@ -503,7 +503,7 @@ stringer_t * st_alloc_opts(uint32_t opts, size_t len) {
 		case (MAPPED_T | JOINTED):
 
 			// Ensure the allocated size is always a multiple of the memory page size.
-			len = align(core_config.page_length, len ? len + 1 : 0);
+			len = align(magma.page_length, len ? len + 1 : 0);
 
 			//Then truncate the file to ensure it matches the memory map size.
 			if (len && (handle = spool_mktemp(MAGMA_SPOOL_DATA, "mapped")) != -1 && ftruncate64(handle, len) == 0 && (result = allocate(sizeof(mapped_t))) &&
@@ -638,7 +638,7 @@ stringer_t * st_realloc(stringer_t *s, size_t len) {
 		case (MAPPED_T | JOINTED):
 
 			avail = ((mapped_t *)s)->avail + 1;
-			len = len ? ((int)len + core_config.page_length - 1) & ~(core_config.page_length - 1) : core_config.page_length;
+			len = len ? ((int)len + magma.page_length - 1) & ~(magma.page_length - 1) : magma.page_length;
 
 			// If we end up shrinking the available memory then we'll need to update the length variable to reflect that.
 			if (avail >= len && (joint = mremap(((mapped_t *)s)->data, avail, len, MREMAP_MAYMOVE)) != MAP_FAILED) {
@@ -662,7 +662,7 @@ stringer_t * st_realloc(stringer_t *s, size_t len) {
 				// An error occurred. If the errno is set to EAGAIN and it's secure memory, the most likely problem is that the requested amount of memory exceeds
 				// the amount of locked memory available under this user account.
 				if ((((mapped_t *)s)->opts & SECURE) && errno == EAGAIN && (system_limit_cur(RLIMIT_MEMLOCK) < len ||
-						system_limit_cur(RLIMIT_MEMLOCK) < (len + core_config.secure.memory.length))) {
+						system_limit_cur(RLIMIT_MEMLOCK) < (len + magma.secure.memory.length))) {
 					log_pedantic("Unable to resize the secure memory mapped buffer, the requested size exceeds the system limit for locked pages. " \
 							"{limit = %lu / requested = %zu}", system_limit_cur(RLIMIT_MEMLOCK), len);
 				}

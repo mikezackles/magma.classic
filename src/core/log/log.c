@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 uint64_t log_date;
 bool_t log_enabled = true;
@@ -122,7 +122,7 @@ void log_internal(const char *file, const char *function, const int line, M_LOG_
 		return;
 	}
 
-	if ((core_config.log.time || M_LOG_TIME == (options & M_LOG_TIME)) && !(M_LOG_TIME_DISABLE == (options & M_LOG_TIME_DISABLE))) {
+	if ((magma.log.time || M_LOG_TIME == (options & M_LOG_TIME)) && !(M_LOG_TIME_DISABLE == (options & M_LOG_TIME_DISABLE))) {
 		now = time(NULL);
 		localtime_r(&now, &local);
 		strftime(buffer, 128, "%T", &local);
@@ -131,17 +131,17 @@ void log_internal(const char *file, const char *function, const int line, M_LOG_
 		output = true;
 	}
 
-	if ((core_config.log.file || M_LOG_FILE == (options & M_LOG_FILE)) && !(M_LOG_FILE_DISABLE == (options & M_LOG_FILE_DISABLE))) {
+	if ((magma.log.file || M_LOG_FILE == (options & M_LOG_FILE)) && !(M_LOG_FILE_DISABLE == (options & M_LOG_FILE_DISABLE))) {
 		fprintf(stdout, "%s%s", (output ? " - " : "["), file);
 		output = true;
 	}
 
-	if ((core_config.log.function || M_LOG_FUNCTION == (options & M_LOG_FUNCTION)) && !(M_LOG_FUNCTION_DISABLE == (options & M_LOG_FUNCTION_DISABLE))) {
+	if ((magma.log.function || M_LOG_FUNCTION == (options & M_LOG_FUNCTION)) && !(M_LOG_FUNCTION_DISABLE == (options & M_LOG_FUNCTION_DISABLE))) {
 		fprintf(stdout, "%s%s%s", (output ? " - " : "["), function, "()");
 		output = true;
 	}
 
-	if ((core_config.log.line || M_LOG_LINE == (options & M_LOG_LINE)) && !(M_LOG_LINE_DISABLE == (options & M_LOG_LINE_DISABLE))) {
+	if ((magma.log.line || M_LOG_LINE == (options & M_LOG_LINE)) && !(M_LOG_LINE_DISABLE == (options & M_LOG_LINE_DISABLE))) {
 		fprintf(stdout, "%s%i", (output ? " - " : "["), line);
 		output = true;
 	}
@@ -155,7 +155,7 @@ void log_internal(const char *file, const char *function, const int line, M_LOG_
 		fprintf(stdout, "\n");
 	}
 
-	if ((core_config.log.stack || M_LOG_STACK_TRACE == (options & M_LOG_STACK_TRACE)) && !(M_LOG_STACK_TRACE_DISABLE == (options & M_LOG_STACK_TRACE_DISABLE))) {
+	if ((magma.log.stack || M_LOG_STACK_TRACE == (options & M_LOG_STACK_TRACE)) && !(M_LOG_STACK_TRACE_DISABLE == (options & M_LOG_STACK_TRACE_DISABLE))) {
 
 		if (print_backtrace() < 0) {
 			errmsg = "Error printing stack backtrace to stdout!\n";
@@ -187,16 +187,16 @@ void log_rotate(void) {
 	FILE *orig_out, *orig_err;
 	chr_t *log_file = MEMORYBUF(1024);
 
-	if (core_config.output.file && core_config.output.path && (date = time_datestamp()) != log_date) {
+	if (magma.output.file && magma.output.path && (date = time_datestamp()) != log_date) {
 
 		orig_out = stdout;
 		orig_err = stderr;
 		log_date = date;
 
-		if (snprintf(log_file, 1024, "%s%smagmad.%lu.log", core_config.output.path, (*(ns_length_get(core_config.output.path) + core_config.output.path) == '/') ? "" : "/",
+		if (snprintf(log_file, 1024, "%s%smagmad.%lu.log", magma.output.path, (*(ns_length_get(magma.output.path) + magma.output.path) == '/') ? "" : "/",
 			date) >= 1024) {
-			log_critical("Log file path exceeded available buffer. { file = %s%smagmad.%lu.log }", core_config.output.path,
-				(*(ns_length_get(core_config.output.path) + core_config.output.path) == '/') ? "" : "/", date);
+			log_critical("Log file path exceeded available buffer. { file = %s%smagmad.%lu.log }", magma.output.path,
+				(*(ns_length_get(magma.output.path) + magma.output.path) == '/') ? "" : "/", date);
 			return;
 		}
 
@@ -229,19 +229,19 @@ bool_t log_start(void) {
 	chr_t *log_file = MEMORYBUF(1024);
 
 	// File logging.
-	if (core_config.output.file && core_config.output.path) {
+	if (magma.output.file && magma.output.path) {
 
 		log_date = time_datestamp();
 
-		if (snprintf(log_file, 1024, "%s%smagmad.%lu.log", core_config.output.path, (*(ns_length_get(core_config.output.path) + core_config.output.path) == '/') ? "" : "/",
+		if (snprintf(log_file, 1024, "%s%smagmad.%lu.log", magma.output.path, (*(ns_length_get(magma.output.path) + magma.output.path) == '/') ? "" : "/",
 			log_date) >= 1024) {
-			log_critical("Log file path exceeded available buffer. { file = %s%smagmad.%lu.log }", core_config.output.path,
-				(*(ns_length_get(core_config.output.path) + core_config.output.path) == '/') ? "" : "/", log_date);
+			log_critical("Log file path exceeded available buffer. { file = %s%smagmad.%lu.log }", magma.output.path,
+				(*(ns_length_get(magma.output.path) + magma.output.path) == '/') ? "" : "/", log_date);
 			return false;
 		}
 
-		if (folder_exists(NULLER(core_config.output.path), false)) {
-			log_critical("The path configured to hold the output log files does not exist. { path = %s }", core_config.output.path);
+		if (folder_exists(NULLER(magma.output.path), false)) {
+			log_critical("The path configured to hold the output log files does not exist. { path = %s }", magma.output.path);
 			return false;
 		}
 

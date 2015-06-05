@@ -58,10 +58,7 @@ char * type(M_TYPE type);
 #include "parsers/parsers.h"
 #include "hash/hash.h"
 #include "host/host.h"
-#include "config/core_config.h"
 #include "limits/system_limits.h"
-
-extern core_config_t core_config;
 
 extern __thread char coreThreadBuffer[1024];
 #define corebufptr (char *)&(coreThreadBuffer)

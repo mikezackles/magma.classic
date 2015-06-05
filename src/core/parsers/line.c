@@ -10,7 +10,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Get a placer pointing to the specified line ('\n' delimited) of content in a data buffer.

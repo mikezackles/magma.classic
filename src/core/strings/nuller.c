@@ -10,8 +10,7 @@
  *
  */
 
-#include "core.h"
-
+#include "magma_common.h"
 
 /**
  * @brief	Return the length of a null-terminated string.

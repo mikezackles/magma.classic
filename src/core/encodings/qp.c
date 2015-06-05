@@ -12,7 +12,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Perform QP (quoted-printable) encoding of a string.

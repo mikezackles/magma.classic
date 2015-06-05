@@ -9,7 +9,7 @@
  *
  */
 
-#include "core.h"
+#include "magma_common.h"
 
 /**
  * @brief	Get the hard system limit for a specified resource.
