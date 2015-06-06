@@ -26,15 +26,35 @@ AM_CPPFLAGS = \
 		-I$(top_srcdir)/build_lib/sources/freetype/include
 
 noinst_LIBRARIES = \
-		libnetwork.a \
-		libproviders.a \
-		libengine.a \
-		libobjects.a \
-		libservers.a \
-		libweb.a \
-		libmagmacore.a
+		libmagma.a
+#		libsymbols.a \
+#		libengine.a \
+#		libmagmacore.a \
+#		libproviders.a \
+#		libnetwork.a \
+#		libobjects.a \
+#		libservers.a \
+#		libweb.a
 
-libmagmacore_a_SOURCES = \
+bin_PROGRAMS = magmad
+
+magmad_LDADD = \
+		libmagma.a \
+		-ldl
+#		libsymbols.a \
+#		libengine.a \
+#		libmagmacore.a \
+#		libproviders.a \
+#		libnetwork.a \
+#		libobjects.a \
+#		libservers.a \
+#		libweb.a
+
+magmad_SOURCES = src/magma.c
+
+magmad_LIBS = $PTHREAD_LIBS
+
+libmagma_a_SOURCES = \
 		src/core/indexes/cursors.c \
 		src/core/indexes/hashed.c \
 		src/core/indexes/inx.c \
@@ -92,21 +112,7 @@ libmagmacore_a_SOURCES = \
 		src/core/parsers/time.c \
 		src/core/parsers/token.c \
 		src/core/parsers/trim.c \
-		src/core/limits/system_limits.c
-
-#libmagmacore_check_a_CPPFLAGS = -I$(top_srcdir)/src/core -I$(top_srcdir)/check/core
-#libmagmacore_check_a_SOURCES = \
-#		check/core/core_check.c
-#
-#check_PROGRAMS = core_tests
-#
-#core_tests_CPPFLAGS = $(CHECK_CFLAGS)
-#core_tests_LDFLAGS = $(CHECK_LIBS)
-#core_tests_SOURCES = \
-#		check/core/runner.c
-#core_tests_LDADD = libmagmacore_check.a libmagmacore.a
-
-libnetwork_a_SOURCES = \
+		src/core/limits/system_limits.c \
 		src/network/addresses.c \
 		src/network/clients.c \
 		src/network/connections.c \
@@ -114,9 +120,8 @@ libnetwork_a_SOURCES = \
 		src/network/options.c \
 		src/network/read.c \
 		src/network/reverse.c \
-		src/network/write.c
-
-libproviders_a_SOURCES = \
+		src/network/write.c \
+		src/providers/symbols.c \
 		src/providers/checkers/clamav.c \
 		src/providers/checkers/dkim.c \
 		src/providers/checkers/dspam.c \
@@ -153,9 +158,6 @@ libproviders_a_SOURCES = \
 		src/providers/storage/tank.c \
 		src/providers/storage/tokyo.c \
 		src/providers/storage/tree.c \
-		src/providers/symbols.c
-
-libengine_a_SOURCES = \
 		src/engine/config/cache/cache.c \
 		src/engine/config/global/datatier.c \
 		src/engine/config/global/global.c \
@@ -172,9 +174,7 @@ libengine_a_SOURCES = \
 		src/engine/status/build.c \
 		src/engine/status/performance.c \
 		src/engine/status/statistics.c \
-		src/engine/status/status.c
-
-libobjects_a_SOURCES = \
+		src/engine/status/status.c \
 		src/objects/config/config.c \
 		src/objects/config/datatier.c \
 		src/objects/contacts/contacts.c \
@@ -217,9 +217,7 @@ libobjects_a_SOURCES = \
 		src/objects/warehouse/warehouse.c \
 		src/objects/locks.c \
 		src/objects/objects.c \
-		src/objects/serials.c
-
-libservers_a_SOURCES = \
+		src/objects/serials.c \
 		src/servers/http/content.c \
 		src/servers/http/data.c \
 		src/servers/http/errors.c \
@@ -257,9 +255,7 @@ libservers_a_SOURCES = \
 		src/servers/smtp/relay.c \
 		src/servers/smtp/session.c \
 		src/servers/smtp/smtp.c \
-		src/servers/smtp/transmit.c
-
-libweb_a_SOURCES = \
+		src/servers/smtp/transmit.c \
 		src/web/contact/abuse.c \
 		src/web/contact/business.c \
 		src/web/contact/contact.c \
@@ -282,3 +278,15 @@ libweb_a_SOURCES = \
 		src/web/statistics/statistics.c \
 		src/web/teacher/datatier.c \
 		src/web/teacher/teacher.c
+
+#libmagmacore_check_a_CPPFLAGS = -I$(top_srcdir)/src/core -I$(top_srcdir)/check/core
+#libmagmacore_check_a_SOURCES = \
+#		check/core/core_check.c
+#
+#check_PROGRAMS = core_tests
+#
+#core_tests_CPPFLAGS = $(CHECK_CFLAGS)
+#core_tests_LDFLAGS = $(CHECK_LIBS)
+#core_tests_SOURCES = \
+#		check/core/runner.c
+#core_tests_LDADD = libmagmacore_check.a libmagmacore.a
