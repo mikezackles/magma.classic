@@ -55,6 +55,7 @@ magmad_SOURCES = src/magma.c
 magmad_LIBS = $PTHREAD_LIBS
 
 libmagma_a_SOURCES = \
+		src/core/type.c \
 		src/core/indexes/cursors.c \
 		src/core/indexes/hashed.c \
 		src/core/indexes/inx.c \
