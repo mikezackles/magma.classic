@@ -1,8 +1,8 @@
-AC_INIT([magma], [0.1])
-
 # Note that this has not been extensively tested with various autoconf
 # versions.  TODO - determine the minimum autoconf version we will support
 AC_PREREQ([2.68])
+
+AC_INIT([magma], [0.1])
 
 # Look for macros in the m4 directory
 AC_CONFIG_MACRO_DIR([m4])
