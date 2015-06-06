@@ -39,6 +39,15 @@ AC_PROG_RANLIB
 # Define _GNU_SOURCE
 AC_GNU_SOURCE
 
+# Handle pthreads (See
+# http://stackoverflow.com/questions/17055279/autotools-for-pthreads-not-setting-correct-linker-flags)
+AX_PTHREAD([
+			AC_DEFINE([HAVE_PTHREAD],[1], [Define if you have pthreads.])
+			LIBS="$PTHREAD_LIBS $LIBS"
+			CFLAGS="$CFLAGS $PTHREAD_CFLAGS"
+			LDFLAGS="$LDFLAGS $PTHREAD_CFLAGS"
+			CC="$PTHREAD_CC"], [])
+
 AC_DEFINE(HAVE_NS_TYPE)
 
 AC_OUTPUT
