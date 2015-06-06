@@ -24,7 +24,7 @@ uint64_t system_limit_max(int_t resource) {
 	struct rlimit64 limits = { 0, 0 };
 
 	if ((ret = getrlimit64(resource, &limits))) {
-		log_info("Unable to retrieve the resource limit. {resource = %i / return = %i / error = %s}", resource, ret, strerror_r(errno, corebufptr, corebuflen));
+		log_info("Unable to retrieve the resource limit. {resource = %i / return = %i / error = %s}", resource, ret, strerror_r(errno, bufptr, buflen));
 		return -1;
 	}
 
@@ -51,7 +51,7 @@ uint64_t system_limit_cur(int_t resource) {
 
 	if ((ret = getrlimit64(resource, &limits))) {
 
-		log_info("Unable to retrieve the resource limit. {resource = %i / return = %i / error = %s}", resource, ret, strerror_r(errno, corebufptr, corebuflen));
+		log_info("Unable to retrieve the resource limit. {resource = %i / return = %i / error = %s}", resource, ret, strerror_r(errno, bufptr, buflen));
 		return -1;
 	}
 

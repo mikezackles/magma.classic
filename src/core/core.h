@@ -60,8 +60,4 @@ char * type(M_TYPE type);
 #include "host/host.h"
 #include "limits/system_limits.h"
 
-extern __thread char coreThreadBuffer[1024];
-#define corebufptr (char *)&(coreThreadBuffer)
-#define corebuflen sizeof(coreThreadBuffer)
-
 #endif

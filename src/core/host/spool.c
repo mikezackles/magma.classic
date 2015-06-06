@@ -196,7 +196,7 @@ int_t spool_check_file(const char *file, const struct stat *info, int type) {
 
 	if (type == FTW_F) {
 		if (unlink(file)) {
-			log_error("An error occurred while trying to unlink a temporary file inside the spool. {%s / %s}", strerror_r(errno, corebufptr, corebuflen), file);
+			log_error("An error occurred while trying to unlink a temporary file inside the spool. {%s / %s}", strerror_r(errno, bufptr, buflen), file);
 			mutex_lock(&spool_error_lock);
 			spool_errors++;
 			mutex_unlock(&spool_error_lock);
