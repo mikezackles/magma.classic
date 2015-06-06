@@ -10,9 +10,11 @@
  *
  */
 
-#include "magma.h"
+#include "magma_common.h"
 
-int kill_all(int signal, int names, char **namelist, struct passwd *pwent);
+#include "engine/context/context.h"
+#include "engine/status/status.h"
+#include "network/network.h"
 
 int main(int argc, char *argv[]) {
 

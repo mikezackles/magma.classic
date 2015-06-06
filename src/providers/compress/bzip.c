@@ -12,6 +12,8 @@
 
 #include "providers/providers.h"
 
+#include "providers/symbols.h"
+
 char bzip_version[16];
 
 /**
