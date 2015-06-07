@@ -707,7 +707,7 @@ int_t mail_modify_part(server_t *server, mail_message_t *message, stringer_t *pa
 	size_t length;
 	stringer_t *header;
 	placer_t chunk;
-	bool_t chunk_success = true;
+	placer_t * chunk_success = NULL;
 	int_t headpart = 0;
 	size_t increment;
 	stringer_t *boundary;
