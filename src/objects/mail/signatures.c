@@ -539,11 +539,13 @@ stringer_t * mail_insert_chunk_text(server_t *server, stringer_t *message, strin
 /**
  * @brief          Get a specified chunk (mime part) of a multipart mime
  *                 message.
- * @param result   a pointer to the placer that will contain the result
- * @param message  a managed string containing the mime message to be parsed.
- * @param boundary a managed string containing the boundary used to split the
- *                 multipart mime message.
- * @param chunk    the one-index based chunk to be retrieved from the multipart message
+ * @param result   a non-null pointer to the placer that will contain the result
+ * @param message  a non-null pointer to a managed string containing the mime
+ *                 message to be parsed.
+ * @param boundary a non-null pointer to a managed string containing the
+ *                 boundary used to split the multipart mime message.
+ * @param chunk    the one-index based chunk to be retrieved from the multipart
+ *                 message
  * @return         NULL on failure or a pointer to the placer containing the
  *                 specified chunk.
  */
