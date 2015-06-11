@@ -425,12 +425,12 @@ curl() {
 				--disable-dict --disable-file --disable-ftp --disable-ftps --disable-gopher --disable-imap --disable-imaps --disable-pop3 --disable-pop3s \
 				--disable-rtsp --disable-smtp --disable-smtps --disable-telnet --disable-tftp --disable-ldap --disable-ssh \
 				--build=x86_64-redhat-linux-gnu --target=x86_64-redhat-linux-gnu \
-				--with-pic --with-ssl="$M_SOURCES/openssl" --with-zlib="$M_SOURCES/zlib" &>> "$M_LOGS/curl.txt"; error
+				--with-pic --with-ssl="$M_SOURCES/openssl" --with-zlib="$M_SOURCES/zlib"; error
 			unset CFLAGS; unset CXXFLAGS; unset CPPFLAGS
 		;;
 		curl-build)
 			cd "$M_SOURCES/curl"; error
-			make &>> "$M_LOGS/curl.txt"; error
+			make; error
 		;;
 		curl-check)
 			# The target 'check' is an alias for the targets 'test' and 'examples'
@@ -592,12 +592,12 @@ dkim() {
 			export CFLAGS="-fPIC -g3 -rdynamic -D_FORTIFY_SOURCE=2"
 			export CXXFLAGS="-fPIC -g3 -rdynamic -D_FORTIFY_SOURCE=2"
 			export CPPFLAGS="-fPIC -g3 -rdynamic -D_FORTIFY_SOURCE=2"
-			./configure --disable-filter --without-milter --without-sasl --without-gnutls --without-odbx --without-openldap --with-openssl &>> "$M_LOGS/dkim.txt"; error
+			./configure --disable-filter --without-milter --without-sasl --without-gnutls --without-odbx --without-openldap --with-openssl; error
 			unset CFLAGS; unset CXXFLAGS; unset CPPFLAGS
 		;;
 		dkim-build)
 			cd "$M_SOURCES/dkim"; error
-			make &>> "$M_LOGS/dkim.txt"; error
+			make; error
 		;;
 		dkim-check)
 			cd "$M_SOURCES/dkim"; error
@@ -835,12 +835,12 @@ dspam() {
 
 			./configure --enable-static --with-pic --enable-preferences-extension --enable-virtual-users \
 			--with-storage-driver=mysql_drv --disable-trusted-user-security --disable-mysql4-initialization	\
-			--with-mysql-includes=$MYSQL_INC_PATH --with-mysql-libraries=$MYSQL_LIB_PATH &>> "$M_LOGS/dspam.txt"; error
+			--with-mysql-includes=$MYSQL_INC_PATH --with-mysql-libraries=$MYSQL_LIB_PATH; error
 			unset CFLAGS; unset CXXFLAGS; unset CPPFLAGS
 		;;
 		dspam-build)
 			cd "$M_SOURCES/dspam"; error
-			make &>> "$M_LOGS/dspam.txt"; error
+			make; error
 		;;
 		dspam-check)
 			cd "$M_SOURCES/dspam"; error
@@ -1003,12 +1003,12 @@ geoip() {
 			export CFLAGS="-fPIC -g3 -rdynamic -D_FORTIFY_SOURCE=2"
 			export CXXFLAGS="-fPIC -g3 -rdynamic -D_FORTIFY_SOURCE=2"
 			export CPPFLAGS="-fPIC -g3 -rdynamic -D_FORTIFY_SOURCE=2"
-			./configure &>> "$M_LOGS/geoip.txt"; error
+			./configure; error
 			unset CFLAGS; unset CXXFLAGS; unset CPPFLAGS
 		;;
 		geoip-build)
 			cd "$M_SOURCES/geoip"; error
-			make &>> "$M_LOGS/geoip.txt"; error
+			make; error
 		;;
 		geoip-check)
 			cd "$M_SOURCES/geoip"; error
