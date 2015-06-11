@@ -1822,8 +1822,8 @@ combo() {
 	($M_BUILD "dkim-$1") & DKIM_PID=$!
 	($M_BUILD "zlib-$1") & ZLIB_PID=$!
 	($M_BUILD "bzip2-$1") & BZIP2_PID=$!
-	($M_BUILD "dspam-$1") & DSPAM_PID=$!
 	($M_BUILD "mysql-$1") & MYSQL_PID=$!
+	($M_BUILD "dspam-$1") & DSPAM_PID=$!
 	($M_BUILD "geoip-$1") & GEOIP_PID=$!
 	($M_BUILD "openssl-$1") & OPENSSL_PID=$!
 	($M_BUILD "jansson-$1") & JANSSON_PID=$!
