@@ -1,0 +1,10 @@
+sudo: false
+language: c
+script: autoreconf -i && ./configure && make
+cache:
+  directories:
+  - build_lib
+addons:
+  apt:
+    packages:
+    - check
