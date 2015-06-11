@@ -825,9 +825,8 @@ dspam() {
 			export CXXFLAGS="-fPIC -g3 -rdynamic -D_FORTIFY_SOURCE=2"
 			export CPPFLAGS="-fPIC -g3 -rdynamic -D_FORTIFY_SOURCE=2"
 
-			if [ ! -d "$M_SOURCES/mysql/libmysql/.libs/" ]; then
-				MYSQL_LIB_PATH="/usr/lib64/mysql/"
-				MYSQL_INC_PATH="/usr/include/mysql/"
+			if [ ! -d "$M_SOURCES/mysql/libmysql_r/.libs/" ]; then
+				error;
 			else
 				MYSQL_LIB_PATH="$M_SOURCES/mysql/libmysql_r/.libs/"
 				MYSQL_INC_PATH="$M_SOURCES/mysql/include/"
