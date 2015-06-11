@@ -307,7 +307,14 @@ $(top_srcdir)/build_lib/magmad.so:
 		rm -rf $(top_srcdir)/build_lib && \
 		mkdir $(top_srcdir)/build_lib && \
 		cd $(top_srcdir)/build_lib && \
-		../scripts/builders/build.lib.sh all
+		../scripts/builders/build.lib.sh mysql-extract && \
+		../scripts/builders/build.lib.sh mysql-prep && \
+		../scripts/builders/build.lib.sh mysql-configure && \
+		../scripts/builders/build.lib.sh mysql-build && \
+		../scripts/builders/build.lib.sh dspam-extract && \
+		../scripts/builders/build.lib.sh dspam-prep && \
+		../scripts/builders/build.lib.sh dspam-configure && \
+		../scripts/builders/build.lib.sh dspam-build
 
 build.h: .FORCE
 		printf "#define MAGMA_BUILD \"6.0.1-$$(git log --format="%H" -n 1 | cut -c33-40)\"\n" > build.h
