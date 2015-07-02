@@ -18,9 +18,9 @@
 
 /**
  * @brief   hmac_multi_digest: perform an HMAC on a multi-concatenated input
-			using the specified digest and key.
+            using the specified digest and key.
  * @param   rounds  The amount of times that input s should be self-concatenated to
-					serve as the input of the digest.
+                    serve as the input of the digest.
  * @param   digest  Digest to be used with the HMAC.
  * @param   s       Input data.
  * @param   key     Key used in HMAC.
@@ -152,8 +152,8 @@ hmac_multi_digest (
 
 	// IVAN, is this necessary??
 	if (st_valid_tracked(opts)) {
-        st_length_set (result, outlen);
-    }
+		st_length_set (result, outlen);
+	}
 
 out_cleanup_ctx:
 	HMAC_CTX_cleanup_d(&ctx);
@@ -233,4 +233,3 @@ stringer_t * hmac_ripemd160(stringer_t *s, stringer_t *key, stringer_t *output) 
 stringer_t * hmac_multi_sha512(uint_t rounds, stringer_t *s, stringer_t *key, stringer_t *output) {
 	return hmac_multi_digest(rounds, (digest_t *)EVP_sha512_d(), s, key, output);
 }
-
