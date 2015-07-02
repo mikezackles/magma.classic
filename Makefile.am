@@ -126,7 +126,7 @@ libmagma_a_SOURCES = \
 		src/providers/cryptography/cryptex.c \
 		src/providers/cryptography/ecies.c \
 		src/providers/cryptography/hash.c \
-		src/providers/cryptography/hmac.c \
+		src/providers/cryptography/new_hmac.c \
 		src/providers/cryptography/openssl.c \
 		src/providers/cryptography/random.c \
 		src/providers/cryptography/scramble.c \
